@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+</head>
+<style>
+    section.funcyUIapp {
+        padding: 70px;
+    }
+
+    .container {
+        width: 1370px;
+        margin: 0 auto;
+    }
+
+    .row {
+        OVERFLOW: HIDDEN;
+    }
+
+    .image a img {
+        display: block;
+        width: 100%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+        float: left;
+    }
+</style>
+
+<body>
+
+    <section class="funcyUIapp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="image">
+                        <a href="funcy-3.jpg" data-fancybox="gallery">
+                            <img src="funcy-3.jpg" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="image">
+                        <a href="video.mp4" data-fancybox="gallery">
+                            <video height="240" width="240">
+                                <source src="video.mp4" type="">
+                            </video>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="image ">
+                        <audio controls autoplay loop>
+                            <source src="audio.mp3" type="">
+                        </audio>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            // Your custom options for a specific gallery
+        });
+    </script>
+</body>
+
+</html>

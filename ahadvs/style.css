@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    padding: 20px;
+    background-color: beige;
+    margin: 89px auto  0px auto;
+}
+
+.box h1 {
+    margin-bottom: 10px;
+}
+
+.box  p {
+    margin-bottom: 10px;
+}
+
+.box a {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.box a:hover {
+    color: black;
+    background-color: white;
+}
+
+.box::after {
+    position: absolute;
+    content: '';
+    bottom: -42px;
+    right: -49px;
+    z-index: -1;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.box::before {
+    position: absolute;
+    content: '';
+    top: -49px;
+    left: -51px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: -1;
+}
+
+
+.container {
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.col-lg-3 {
+    float: left;
+    width: 25%;
+}
+
+.col-lg-6 {
+    width: 50%;
+    float: left;
+}
+
+nav .navbar ul li {
+    float: left;
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav .navbar ul {
+
+    overflow: hidden;
+    margin: 25px 0px 0px 0px;
+    background-color: #8d8383;
+    color: white;
+    width: max-content;
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    padding: 21px;
+    display: inline-block;
+}
+
+header {
+    padding: 130px 0;
+}
+
+.btn a {
+    text-decoration: none;
+    margin: 25px 0px 0px 0px;
+    color: black;
+    display: inline-block;
+    padding: 17px 40px;
+    background-color: #ed6b0b;
+    border-radius: 10px;
+    font-size: 19px;
+    display: inline-block;
+}
+
+nav .navbar::before {
+    position: absolute;
+    content: '';
+    top: -77px;
+    left: 189px;
+    background-color: #ed6b0b;
+    height: 248px;
+    width: 290px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.navbar {
+    position: relative;
+    text-align: center;
+}

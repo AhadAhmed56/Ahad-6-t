@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            font-family: "Science Gothic", sans-serif;
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        .header {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.116);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 20px 50px;
+        }
+
+        .container {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        .row {
+            overflow: hidden;
+        }
+
+        .col-lg-2,
+        .col-lg-5 {
+            float: left;
+        }
+
+        .col-lg-2 {
+            width: 16.66%;
+        }
+
+        .col-lg-5 {
+            width: 41.66%;
+        }
+
+        .logo {
+            border-right: 2px solid rgba(255, 255, 255, 0.116);
+        }
+
+        .logo img {
+            width: 180px;
+            display: block;
+        }
+
+
+        .navbar {
+            margin-top: 10px;
+            margin-left: 21px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .navbar ul li {
+            float: left;
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all .5s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: red;
+        }
+
+        .navbar ul li i {
+            font-size: 10px;
+            margin-left: 4px;
+        }
+
+
+        .info {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .info ul {
+            list-style: none;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .info ul li {
+            float: left;
+            margin: 0 10px;
+            color: white;
+        }
+
+        .info h5 {
+            padding-right: 25px;
+            margin-right: 10px;
+            border-right: 2px solid rgba(255, 255, 255, 0.116);
+            font-weight: 500;
+        }
+
+        .info i {
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .banner {
+            background-image: url(engineer-bg.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 133vh;
+            background-size: cover;
+        }
+
+        .col-lg-12 {
+            float: left;
+            width: 100%;
+        }
+
+        .content {
+            color: white;
+            margin: 164px 174px;
+            width: 57%;
+        }
+
+        .content h1 {
+            font-size: 54px;
+            margin-bottom: 17px;
+        }
+
+        .content p {
+            margin-right: 330px;
+            line-height: 1.6;
+            margin-bottom: 37px;
+        }
+
+
+        .content a {
+            background-color: red;
+            padding: 17px 38px;
+            border-radius: 6px;
+            color: white;
+            text-decoration: none;
+            transition: all .5s ease;
+        }
+
+        .content a:hover {
+            background-color: white;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container-floud">
+            <div class="row">
+
+
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <img src="Logo-4.webp" alt="">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5">
+                    <div class="navbar">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Page<i class="fa-solid fa-plus"></i></a></li>
+                            <li><a href="#">About<i class="fa-solid fa-plus"></i></a></li>
+                            <li><a href="#">Elements<i class="fa-solid fa-plus"></i></a></li>
+                            <li><a href="#">Blog<i class="fa-solid fa-plus"></i></a></li>
+                            <li><a href="#">Contact<i class="fa-solid fa-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-5">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <h5>Tel.+97 123 322 4557</h5>
+                            </li>
+                            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li><i class="fa-solid fa-bars"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content">
+                        <h1>
+                            Delivering Superior Solution TO Complex Engineering.
+                        </h1>
+                        <p>
+                            Since 1989 we are serving customer successfully complete projects on time and within budget
+                        </p>
+                        <a href="#">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Code injected by live-server -->
+
+</body>
+
+</html>

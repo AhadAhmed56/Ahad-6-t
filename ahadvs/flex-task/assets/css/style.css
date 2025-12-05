@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Science+Gothic:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
+
+
+:root {
+  --color-white: #fff;
+  --color-dark: #24182e;
+  --color-pink: #e60070;
+  --color-para: #858585;
+  --color-sky:#e6f8f9;
+
+  --font-banner: 'Pacifico', cursive;
+  --font-sub: 'Science Gothic', sans-serif;
+  --font-main: 'PT Serif', serif;
+  --font-para: 'Roboto Slab', serif;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-para);
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  display: block;
+  width: 100%;
+}
+
+.col-lg-1 {
+  width: 8.33%;
+  float: left;
+}
+
+.col-lg-2 {
+  width: 16.66%;
+  float: left;
+}
+
+.col-lg-3 {
+  width: 25%;
+  float: left;
+}
+
+.col-lg-4 {
+  width: 33.33%;
+  float: left;
+}
+
+.col-lg-5 {
+  width: 41.66%;
+  float: left;
+}
+
+.col-lg-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-lg-7 {
+  width: 58.33%;
+  float: left;
+}
+
+.col-lg-8 {
+  width: 66.66%;
+  float: left;
+}
+
+.col-lg-9 {
+  width: 75%;
+  float: left;
+}
+
+.col-lg-10 {
+  width: 83.33%;
+  float: left;
+}
+
+.col-lg-11 {
+  width: 91.66%;
+  float: left;
+}
+
+.col-lg-12 {
+  width: 91.66%;
+  float: left;
+}
+
+/* HEADER & NAVIGATION */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: var(--color-pink);
+}
+
+
+/* BANNER SECTION */
+
+.banner {
+  position: relative;
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: var(--color-white);
+}
+
+/* Overlay to darken background */
+.banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(36, 24, 46, 0.75);
+  z-index: 1;
+}
+
+.banner>* {
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+}
+
+/* Banner heading */
+.banner .content h1 {
+  font-family: var(--font-banner);
+  font-size: 90px;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--color-pink);
+}
+
+/* Banner sub-heading */
+.banner .content h3 {
+  font-family: var(--font-sub);
+  font-size: 70px;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+
+
+/* Button */
+.content a {
+  background-color: var(--color-pink);
+  border: none;
+  padding: 1rem 3rem;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.content a:hover {
+  background-color: #e60070;
+}
+
+.img-left-img {
+  position: absolute;
+  top: 410px;
+  left: 0;
+}
+
+.img-left-img img {
+  width: 168px;
+  display: block;
+}
+
+.img-right-img {
+  position: absolute;
+  top: 75px;
+  right: -15px;
+}
+
+.img-right-img img {
+  width: 148px;
+  display: block;
+}
+
+/* skills */
+.Skill-Expect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+section.Skills {
+  padding: 122px;
+}
+
+.container {
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.Skill-Expect .image img {
+  width: 65vh;
+}
+
+.Skill-Expect .content h5 {
+  font-size: 40px;
+  font-family: var(--font-main);
+  color: var(--color-pink);
+  font-weight: 100;
+  font-style: italic;
+}
+
+.Skill-Expect .content h3 {
+  font-size: 40px;
+  line-height: none;
+  font-weight: 900;
+}
+
+/* underline */
+.underline {
+  background-color: var(--color-pink);
+  width: 80px;
+  height: 5px;
+  margin: 20px 0px 10px 0px;
+}
+
+.Skill-Expect .content p {
+  line-height: 1.7;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--color-para);
+  text-align: justify;
+}
+/* services */
+
+/* .content-service-1 */
+.content-service-1{
+  background-color: var(--color-dark);
+  height: 72vh;
+  padding: 80px 64px;
+}
+
+.content-service-1 .service-content{
+  margin-left: 150px;
+  padding-top: 40px;
+}
+ .content-service-1 .service-content h5 {
+  font-size: 40px;
+  font-family: var(--font-main);
+  color: var(--color-pink);
+  font-weight: 100;
+  font-style: italic;
+}
+
+.content-service-1 .service-content h3 {
+  font-size: 40px;
+  line-height: none;
+  font-weight: 900;
+  color: var(--color-white);
+}
+
+/* underline */
+.content-service-1 .service-content .underline {
+  background-color: var(--color-white);
+  width: 80px;
+  height: 5px;
+  margin: 20px 0px 10px 0px;
+}
+
+.content-service-1 .service-content p {
+  line-height: 1.9;
+  margin-top: 15px;
+  font-size: 14px;
+  color:#eaeaea;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.service-content a {
+  background-color: transparent;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: 2px solid var(--color-white);
+}
+
+.service-content a:hover {
+  background-color:  var(--color-white);
+  color: var(--color-pink);
+}
+
+
+/* content-service-2 */
+.content-service-2{
+  background-color: var(--color-sky);
+    height: 72vh;
+  padding: 100px 64px;
+
+}
+
+ .content-service-2 h5 {
+  font-size: 40px;
+  font-family: var(--font-main);
+  color: var(--color-pink);
+  font-weight: 100;
+  font-style: italic;
+}
+
+.content-service-2 h3 {
+  font-size: 40px;
+  line-height: none;
+  font-weight: 900;
+}
+
+/* underline */
+.content-service-2 .underline {
+  background-color: var(--color-pink);
+  width: 80px;
+  height: 5px;
+  margin: 20px 0px 20px 0px;
+}
+
+.content-service-2 p {
+line-height: 1.9;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--color-para);
+   text-align: justify;
+  margin-bottom: 30px;
+}
+section.service-2 .image img {
+    height: 72vh;
+}
+/* Button */
+.content-service-2 a {
+  background-color: var(--color-dark);
+  border: none;
+  padding: 1rem 1.5rem;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.content-service-2 a:hover {
+  background-color:  black;
+}

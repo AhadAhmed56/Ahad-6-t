@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcy box </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css" />
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    section {
+        padding: 70px;
+    }
+
+    .container {
+        width: 1370px;
+        margin: 0 auto;
+    }
+
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+
+    .row {
+        overflow: hidden;
+    }
+
+    .items img {
+        width: 100%;
+        display: block;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="items">
+                        <a href="funcy-1.jpg" data-fancybox="gallery">
+                            <img src="funcy-1.jpg" alt="Image">
+                        </a>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="items">
+                       <a href="funcyvideo.mp4"  data-fancybox="gallery">
+                         <video width="420" height="240" controls>
+                            <source src="funcyvideo.mp4" type="Video/mp4">
+                        </video>
+                       </a>
+                    </div>
+                </div>
+                 <div class="col-lg-4">
+                    <div class="items">
+                        <a href="funcy-2.jpg" data-fancybox="gallery">
+                            <img src="funcy-2.jpg" alt="Image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+  // Your custom options for a specific gallery
+});
+    </script>
+</body>
+
+</html>

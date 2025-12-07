@@ -93,7 +93,7 @@ img {
 }
 
 .col-lg-12 {
-  width: 91.66%;
+  width: 100%;
   float: left;
 }
 
@@ -425,4 +425,174 @@ section.blog {
 .icon-content .content h3 {
   color: white;
   font-size: 16px;
+}
+/* portfolio-sec */
+section.portfolio {
+  background-color: var(--color-sky);
+}
+
+.portfolio-sec .content {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.portfolio-sec .content h3 {
+  font-size: 50px;
+}
+
+.portfolio-sec .content h5 {
+  font-size: 40px;
+  color: var(--color-pink);
+}
+
+.portfolio-sec .content .underline {
+  background-color: var(--color-pink);
+  width: 80px;
+  height: 5px;
+  margin: 20px 10px 0px;
+  text-align: center;
+  margin-left: 47%;
+}
+
+/* Images Grid with Hover */
+.portfolio-sec .images-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-sec .images-box .image {
+  position: relative;
+  /* width: 400; */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio-sec .images-box img {
+  width: 420px;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover Effects */
+.portfolio-sec .images-box .image:hover img {
+  transform: scale(1.08);
+}
+
+/* Overlay Text */
+.portfolio-sec .images-box .overlay-text {
+  position: absolute;
+  bottom:20px;
+  left: 50%;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 2;
+  line-height: 1.4;
+}
+
+.portfolio-sec .images-box .image:hover .overlay-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.portfolio-sec .images-box .overlay-text p{
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+.portfolio-sec .images-box .overlay-text h5{
+  color: gray;
+  font-size: 13px;
+  }
+/* Optional Dark Overlay */
+.portfolio-sec .images-box .image::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  width: 80%;
+  height: 35%;
+  background: var(--color-white);
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+  text-align: center;
+}
+
+.portfolio-sec .images-box .image:hover::before {
+  opacity: 1;
+}
+/* Basic Fixes */
+.container-flaud {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Customer Section */
+.customer {
+  padding: 80px 0;
+  background: #f7f7f7;
+}
+
+.customer-sec-1 .content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.customer-sec-1 .underline {
+  width: 80px;
+  height: 4px;
+  background: #000;
+  margin: 10px auto;
+}
+
+/* Slider Fix */
+.slider {
+  width: 100%;
+  display: block;
+}
+
+.slider-customer {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 2px 8px #0001;
+}
+
+.slider-customer .image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.slider-customer .content-info {
+  margin-top: 15px;
+}
+
+.slider-customer p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.slider-customer .info h4 {
+  font-size: 20px;
+  margin: 10px 0 0 0;
 }

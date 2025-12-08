@@ -23,15 +23,18 @@
 
 body {
   font-family: var(--font-para);
+  overflow-x: hidden;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 img {
   display: block;
   width: 100%;
@@ -158,7 +161,7 @@ header {
   z-index: 1;
 }
 
-.banner > * {
+.banner>* {
   position: relative;
   z-index: 2;
 }
@@ -275,6 +278,7 @@ section.Skills {
   color: var(--color-para);
   text-align: justify;
 }
+
 /* services */
 
 /* .content-service-1 */
@@ -288,6 +292,7 @@ section.Skills {
   margin-left: 150px;
   padding-top: 40px;
 }
+
 .content-service-1 .service-content h5 {
   font-size: 40px;
   font-family: var(--font-main);
@@ -377,9 +382,11 @@ section.Skills {
   text-align: justify;
   margin-bottom: 30px;
 }
+
 section.service-2 .image img {
   height: 72vh;
 }
+
 /* Button */
 .content-service-2 a {
   background-color: var(--color-dark);
@@ -397,35 +404,42 @@ section.service-2 .image img {
 .content-service-2 a:hover {
   background-color: black;
 }
+
 /* blog-sec */
 section.blog {
   background-color: var(--color-dark);
   padding: 142px 2px;
 }
+
 .blog-sec {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 72px;
 }
+
 .icon-content {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
+
 .icon-content .icons i {
   color: var(--color-pink);
   font-size: 65px;
 }
+
 .icon-content .content h5 {
   font-size: 50px;
   color: white;
 }
+
 .icon-content .content h3 {
   color: white;
   font-size: 16px;
 }
+
 /* portfolio-sec */
 section.portfolio {
   background-color: var(--color-sky);
@@ -485,7 +499,7 @@ section.portfolio {
 /* Overlay Text */
 .portfolio-sec .images-box .overlay-text {
   position: absolute;
-  bottom:20px;
+  bottom: 20px;
   left: 50%;
   color: white;
   font-size: 16px;
@@ -501,15 +515,18 @@ section.portfolio {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-.portfolio-sec .images-box .overlay-text p{
+
+.portfolio-sec .images-box .overlay-text p {
   color: #000;
   font-size: 24px;
   font-weight: bold;
 }
-.portfolio-sec .images-box .overlay-text h5{
+
+.portfolio-sec .images-box .overlay-text h5 {
   color: gray;
   font-size: 13px;
-  }
+}
+
 /* Optional Dark Overlay */
 .portfolio-sec .images-box .image::before {
   content: "";
@@ -529,6 +546,7 @@ section.portfolio {
 .portfolio-sec .images-box .image:hover::before {
   opacity: 1;
 }
+
 /* Basic Fixes */
 .container-flaud {
   width: 100%;
@@ -539,7 +557,8 @@ section.portfolio {
 .row {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Customer Section */
@@ -563,16 +582,25 @@ section.portfolio {
 /* Slider Fix */
 .slider {
   width: 100%;
-  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: visible;
+  display: block !important;
+  min-height: 300px;
 }
 
 .slider-customer {
   background: #fff;
-  padding: 20px;
-  margin: 10px;
+  padding: 40px;
+  margin: 20px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0px 2px 8px #0001;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-height: 250px;
 }
 
 .slider-customer .image img {
@@ -581,18 +609,37 @@ section.portfolio {
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
+  display: block;
 }
 
 .slider-customer .content-info {
   margin-top: 15px;
+  width: 100%;
+  display: block;
 }
 
-.slider-customer p {
+.slider-customer .content-info p {
   color: #444;
   line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.slider-customer .info {
+  display: block;
+  margin-top: 10px;
 }
 
 .slider-customer .info h4 {
   font-size: 20px;
-  margin: 10px 0 0 0;
+  margin: 10px 0 5px 0;
+  color: #24182e;
+  display: block;
+}
+
+.slider-customer .info p {
+  font-size: 14px;
+  color: #858585;
+  display: block;
 }

@@ -130,8 +130,7 @@ header {
   transition: color 0.3s;
 }
 
-.navbar nav ul li a:hover,
-.navbar nav ul li a.active {
+.navbar nav ul li a:hover {
   color: var(--color-pink);
 }
 
@@ -472,20 +471,17 @@ section.portfolio {
 /* Images Grid with Hover */
 .portfolio-sec .images-box {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
 .portfolio-sec .images-box .image {
   position: relative;
-  /* width: 400; */
   overflow: hidden;
   cursor: pointer;
 }
 
 .portfolio-sec .images-box img {
-  width: 420px;
+  width: 476px;
   height: auto;
   display: block;
   transition: transform 0.4s ease, filter 0.4s ease;
@@ -547,65 +543,66 @@ section.portfolio {
   opacity: 1;
 }
 
-/* Basic Fixes */
+/* Basic  */
 .container-flaud {
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
-
-.row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 /* Customer Section */
 .customer {
   padding: 80px 0;
-  background: #f7f7f7;
+  background:  var(--color-sky);
 }
 
 .customer-sec-1 .content {
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 23px;
+}
+.customer-sec-1 .content h5 {
+  font-size: 40px;
+  color: var(--color-pink);
+}
+.customer-sec-1 h3 {
+  font-size: 50px;
 }
 
 .customer-sec-1 .underline {
   width: 80px;
   height: 4px;
-  background: #000;
+  background: var(--color-pink);
   margin: 10px auto;
 }
 
-/* Slider Fix */
+/* Slider  */
 .slider {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1900px;
   margin: 0 auto;
   overflow: visible;
-  display: block !important;
+  display: block ;
   min-height: 300px;
 }
 
 .slider-customer {
-  background: #fff;
   padding: 40px;
   margin: 20px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  display: flex !important;
+  display: flex ;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   min-height: 250px;
 }
+.slider-customer .image{
+  margin-bottom: 25px;
+}
 
 .slider-customer .image img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
@@ -615,31 +612,127 @@ section.portfolio {
 .slider-customer .content-info {
   margin-top: 15px;
   width: 100%;
-  display: block;
+ 
 }
 
 .slider-customer .content-info p {
-  color: #444;
+  color: #000;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
   margin-bottom: 15px;
-  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .slider-customer .info {
-  display: block;
-  margin-top: 10px;
+  margin-top: 29px;
 }
 
 .slider-customer .info h4 {
   font-size: 20px;
-  margin: 10px 0 5px 0;
   color: #24182e;
-  display: block;
+  font-weight: 800;
 }
 
 .slider-customer .info p {
   font-size: 14px;
-  color: #858585;
-  display: block;
+  color: var(--color-pink); 
+  font-weight: 400;
+}
+ul.slick-dots {
+    overflow: hidden;
+    width: max-content;
+    margin: 0 auto;
+}
+.slick-dots li {
+    float: left;
+    list-style: none;
+    padding: 0 5px;  
+}
+.slick-dots li button {
+    font-size: 0px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    line-height: 8px;
+    border: rgb(235, 227, 227);
+    cursor: pointer;
+}
+.slick-dots li.slick-active button {
+  background-color: var(--color-pink);
+}
+/*meet */
+section.meet .meet-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    padding: 15px 0px;
+}
+
+section.meet {
+    background-color: var(--color-dark);
+    padding: 133px 0;
+    margin-top: 18px;
+}
+.meet-sec .image img {
+    width: 40vh;
+    height: 48vh;
+    object-fit: contain;
+}.meet-sec .image img {
+    width: 40vh;
+    height: 48vh;
+    object-fit: contain;
+}
+
+section.meet .content h3 {
+    color: white;
+}
+section.meet .overlay-text {
+    text-align: center;
+}
+section.meet .overlay-text ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+
+section.meet .overlay-text ul li a {
+    text-decoration: none;
+    color: black;
+}
+section.meet .overlay-text h5 {
+    font-size: 15px;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 19px;
+}
+
+section.meet .overlay-text h3 {
+    font-size: 43px;
+    margin-bottom: 9px;
+}
+section.meet .image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+section.meet .image .overlay-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  width: 90%;
+  transform: translate(-50%,-50%);
+  background-color: var(--color-white);  
+   opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 2;
+}
+section.meet .image:hover .overlay-text{
+  opacity: 1;
+  /* transform: translate(-50%, -50%) scale(1); */
 }

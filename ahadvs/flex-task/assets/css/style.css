@@ -653,57 +653,86 @@ ul.slick-dots {
 }
 .slick-dots li button {
     font-size: 0px;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    line-height: 8px;
+    line-height: 10px;
     border: rgb(235, 227, 227);
     cursor: pointer;
 }
 .slick-dots li.slick-active button {
   background-color: var(--color-pink);
 }
-/*meet */
-section.meet .meet-sec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 31px;
-    padding: 15px 0px;
-}
-
+/* Meet Section */
 section.meet {
     background-color: var(--color-dark);
     padding: 133px 0;
     margin-top: 18px;
 }
-.meet-sec .image img {
-    width: 40vh;
-    height: 48vh;
-    object-fit: contain;
-}.meet-sec .image img {
-    width: 40vh;
-    height: 48vh;
-    object-fit: contain;
-}
 
-section.meet .content h3 {
-    color: white;
-}
-section.meet .overlay-text {
-    text-align: center;
-}
-section.meet .overlay-text ul {
+section.meet .meet-sec {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 48px;
+    gap: 31px;
+    padding: 15px 0;
 }
 
-section.meet .overlay-text ul li a {
-    text-decoration: none;
-    color: black;
+/* Image container */
+section.meet .image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    flex-shrink: 0;
 }
+
+/* Image styling - Duplicate remove kiya */
+.meet-sec .image img {
+    width: 40vh;
+    height: 48vh;
+    object-fit: cover; /* contain ki jagah cover better ho sakta hai */
+    transition: transform 0.4s ease;
+}
+
+/* Image hover effect */
+section.meet .image:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay */
+section.meet .image .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 90%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-white);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Overlay hover effect */
+section.meet .image:hover .overlay-text {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Content styling */
+section.meet .content h3 {
+    color: white;
+    margin: 0;
+}
+
+/* Overlay text general */
 section.meet .overlay-text h5 {
     font-size: 15px;
     color: gray;
@@ -714,25 +743,27 @@ section.meet .overlay-text h5 {
 section.meet .overlay-text h3 {
     font-size: 43px;
     margin-bottom: 9px;
+    color: black;
 }
-section.meet .image {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
+
+/* Social links */
+section.meet .overlay-text ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-section.meet .image .overlay-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 90%;
-  width: 90%;
-  transform: translate(-50%,-50%);
-  background-color: var(--color-white);  
-   opacity: 0;
-  transition: all 0.4s ease;
-  z-index: 2;
+
+section.meet .overlay-text ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
-section.meet .image:hover .overlay-text{
-  opacity: 1;
-  /* transform: translate(-50%, -50%) scale(1); */
+
+section.meet .overlay-text ul li a:hover {
+    color: var(--color-primary); 
 }

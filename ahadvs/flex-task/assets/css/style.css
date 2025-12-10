@@ -110,7 +110,7 @@ header {
   z-index: 999;
 }
 
-.row {
+.logo-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -240,7 +240,7 @@ section.Skills {
 }
 
 .container {
-  width: 1030px;
+  width: 1091px;
   margin: 0 auto;
 }
 
@@ -570,7 +570,7 @@ section.portfolio {
 
 .customer-sec-1 .underline {
   width: 80px;
-  height: 4px;
+  height: 7px;
   background: var(--color-pink);
   margin: 10px auto;
 }
@@ -766,4 +766,98 @@ section.meet .overlay-text ul li a {
 
 section.meet .overlay-text ul li a:hover {
     color: var(--color-primary); 
+}
+/* bg-image */
+.bg-image{
+  background-image: url("../images/parallax-bg-optimized.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  padding: 248px;
+  position: relative;
+}
+/* Overlay to darken background */
+.bg-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(36, 24, 46, 0.75);
+  z-index: 1;
+}
+
+.bg-image>* {
+  position: relative;
+  z-index: 2;
+}
+.bg-image .content h3{
+  color: var(--color-white);
+  margin: 0 auto;
+  font-size: 70px;
+}
+/* plan-price */
+section.plan-price {
+    background-color: var(--color-sky);
+    padding: 130px 0px;
+}
+.plan-price .price-card {
+    background-color: var(--color-white);
+    padding: 43px;
+}
+
+.price-card .web-inf0 h4 {
+    FONT-SIZE: 32PX;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.price-card .web-inf0 p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.web-inf0 {
+    margin: 18px 0px;
+}
+
+.price-card  .dollar-sign {
+    display: flex;
+    align-items: center;
+    
+}
+.price-card .dollar-sign  p {
+    font-weight: bolder;
+    font-size: 75px;
+    margin: 0px 0px 7px 0px;
+}
+.price-card .dollar-sign  span{
+  font-size: 30px ;
+  font-weight: bolder;
+}
+.price-card  .dollar-sign {
+    display: flex;
+    align-items: center;
+}
+
+.price-card ul li {
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+}
+
+.price-card ul {
+    padding: 0px 0px 30px 0px;
+}
+.plan-price .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 38px;
+    padding: 48px 0px;
+}
+
+.price-card a {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 15px 64px;
+    font-weight: bolder;
 }

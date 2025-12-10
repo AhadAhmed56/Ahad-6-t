@@ -26,6 +26,7 @@ body {
   overflow-x: hidden;
 }
 
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -238,11 +239,16 @@ header {
 section.Skills {
   padding: 122px;
 }
-
 .container {
   width: 1091px;
   margin: 0 auto;
 }
+
+.container-flaud {
+  width: 100%;
+  margin: 0 auto;
+}
+
 
 .Skill-Expect .image img {
   width: 65vh;
@@ -541,14 +547,7 @@ section.portfolio {
 
 .portfolio-sec .images-box .image:hover::before {
   opacity: 1;
-}
-
-/* Basic  */
-.container-flaud {
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+}a
 /* Customer Section */
 .customer {
   padding: 80px 0;
@@ -795,69 +794,157 @@ section.meet .overlay-text ul li a:hover {
   font-size: 70px;
 }
 /* plan-price */
+
 section.plan-price {
     background-color: var(--color-sky);
     padding: 130px 0px;
 }
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 70px 0px;
+}
+
+.plan-price .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 38px;
+    padding: 48px 0px;
+    flex-wrap: wrap;
+}
+
 .plan-price .price-card {
     background-color: var(--color-white);
     padding: 43px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
 }
 
-.price-card .web-inf0 h4 {
-    FONT-SIZE: 32PX;
+.plan-price .price-card:hover {
+    transform: translateY(-10px);
+}
+
+.price-card .web-info h4 {
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
-.price-card .web-inf0 p {
+.price-card .web-info p {
     font-size: 15px;
     font-weight: normal;
+    line-height: 1.5;
 }
 
-.web-inf0 {
+.web-info {
     margin: 18px 0px;
+    text-align: center;
 }
 
-.price-card  .dollar-sign {
+.price-card .dollar-sign {
     display: flex;
     align-items: center;
-    
+    margin: 20px 0;
 }
-.price-card .dollar-sign  p {
+
+.price-card .dollar-sign p {
     font-weight: bolder;
     font-size: 75px;
     margin: 0px 0px 7px 0px;
-}
-.price-card .dollar-sign  span{
-  font-size: 30px ;
-  font-weight: bolder;
-}
-.price-card  .dollar-sign {
-    display: flex;
-    align-items: center;
+    line-height: 0.9;
 }
 
-.price-card ul li {
-    padding: 10px 0px;
-    border-bottom: 1px solid;
+.price-card .dollar-sign span {
+    font-size: 30px;
+    font-weight: bolder;
+    align-self: flex-start;
+    margin-top: 10px;
 }
 
 .price-card ul {
     padding: 0px 0px 30px 0px;
+    list-style: none;
+    margin: 0;
+    flex-grow: 1;
 }
-.plan-price .card {
+
+.price-card ul li {
+    padding: 12px 0px;
+    border-bottom: 1px solid #eee;
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
-    gap: 38px;
-    padding: 48px 0px;
 }
+
+.price-card ul li:last-child {
+    border-bottom: none;
+}
+
 
 .price-card a {
     background-color: var(--color-dark);
     color: var(--color-white);
-    padding: 15px 64px;
+    padding: 15px 40px;
     font-weight: bolder;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.price-card a:hover {
+    background-color: var(--color-pink);
+}
+
+.price-card .web h4 {
+    color: var(--color-pink);
+}
+
+.price-card a.btn {
+    background-color: var(--color-pink);
+}
+
+.price-card a.btn:hover {
+    background-color: var(--color-dark);
+}
+
+.price-card .web p {
+    color: black;
+}
+
+.price-card .sign p {
+    font-weight: bolder;
+    font-size: 75px;
+    margin: 0px 0px 7px 0px;
+    color: var(--color-pink);
+}
+
+.price-card .sign span {
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--color-pink);
+}
+
+
+.price-card:nth-child(2) {
+    position: relative;
+    transform: scale(1.05);
+}
+
+.price-card:nth-child(2):hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+

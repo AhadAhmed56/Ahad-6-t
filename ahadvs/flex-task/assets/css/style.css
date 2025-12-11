@@ -40,6 +40,10 @@ img {
   display: block;
   width: 100%;
 }
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
 .content h5 {
   font-size: 40px;
   font-family: var(--font-main);
@@ -261,7 +265,7 @@ section.Skills {
 }
 
 .Skill-Expect .content h5 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: var(--font-main);
   color: var(--color-pink);
   font-weight: 100;
@@ -295,7 +299,7 @@ section.Skills {
 /* .content-service-1 */
 .content-service-1 {
   background-color: var(--color-dark);
-  height: 74vh;
+  height: 71.5vh;
   padding: 80px 64px;
 }
 
@@ -305,7 +309,7 @@ section.Skills {
 }
 
 .content-service-1 .service-content h5 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: var(--font-main);
   color: var(--color-pink);
   font-weight: 100;
@@ -364,7 +368,7 @@ section.Skills {
 }
 
 .content-service-2 h5 {
-  font-size: 40px;
+  font-size: 30px;
   font-family: var(--font-main);
   color: var(--color-pink);
   font-weight: 100;
@@ -417,7 +421,7 @@ section.service-2 .image img {
 }
 
 /* blog-sec */
-section.blog {
+.blog {
   background-color: var(--color-dark);
   padding: 142px 2px;
 }
@@ -458,7 +462,7 @@ section.portfolio {
 
 .portfolio-sec .content {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 101px;
   padding-bottom: 40px;
 }
 
@@ -467,7 +471,7 @@ section.portfolio {
 }
 
 .portfolio-sec .content h5 {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--color-pink);
 }
 
@@ -493,7 +497,7 @@ section.portfolio {
 }
 
 .portfolio-sec .images-box img {
-  width: 476px;
+  width: 381px;
   height: auto;
   display: block;
   transition: transform 0.4s ease, filter 0.4s ease;
@@ -558,24 +562,25 @@ section.portfolio {
 a
 
 /* Customer Section */
+
 section.customer {
     background-color: var(--color-sky);
-    padding: 109px 0px;
+    padding: 103px 0px;
 }
-
-
 .customer-sec-1 .content {
   text-align: center;
-  margin-bottom: -36px;
 }
 
 .customer-sec-1 .content h5 {
-  font-size: 40px;
+  font-size: 30px;
   color: var(--color-pink);
+  font-style: italic;
+  font-family: var(--font-main);
+  font-weight: 400;
 }
 
 .customer-sec-1 h3 {
-  font-size: 50px;
+  font-size: 54px;
 }
 
 .customer-sec-1 .underline {
@@ -597,7 +602,6 @@ section.customer {
 
 .slider-customer {
   padding: 40px;
-  margin: 20px;
   border-radius: 12px;
   text-align: center;
   display: flex;
@@ -612,8 +616,8 @@ section.customer {
 }
 
 .slider-customer .image img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
@@ -629,7 +633,7 @@ section.customer {
 .slider-customer .content-info p {
   color: #000;
   line-height: 1.6;
-  font-size: 25px;
+  font-size: 23px;
   font-style: italic;
   font-weight: 400;
   margin-bottom: 15px;
@@ -683,7 +687,6 @@ ul.slick-dots {
 section.meet {
   background-color: var(--color-dark);
   padding: 133px 0;
-  margin-top: 18px;
 }
 
 section.meet .meet-sec {
@@ -746,7 +749,7 @@ section.meet .image:hover .overlay-text {
 /* Content styling */
 section.meet .content h3 {
   color: white;
-  margin: 0;
+  font-size: 50px;
 }
 
 /* Overlay text general */
@@ -788,11 +791,11 @@ section.meet .overlay-text ul li a:hover {
 /* bg-image */
 .bg-image {
   background-image: url("../images/parallax-bg-optimized.jpg");
-  background-position: center;
   background-size: cover;
   background-position: center;
-  padding: 248px;
+  padding: 122px;
   position: relative;
+  background-position: center;
 }
 
 /* Overlay to darken background */
@@ -811,7 +814,6 @@ section.meet .overlay-text ul li a:hover {
 
 .bg-image .content h3 {
   color: var(--color-white);
-  margin: 0 auto;
   font-size: 70px;
 }
 
@@ -819,7 +821,7 @@ section.meet .overlay-text ul li a:hover {
 
 section.plan-price {
   background-color: var(--color-sky);
-  padding: 130px 0px;
+  padding: 120px 0px;
 }
 
 .card {
@@ -827,7 +829,7 @@ section.plan-price {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 0px 0px;
+  padding: 36px 0px;
 }
 
 .plan-price .card-container {
@@ -915,7 +917,7 @@ section.plan-price {
 .price-card a {
   background-color: var(--color-dark);
   color: var(--color-white);
-  padding: 15px 40px;
+  padding: 14px 40px;
   font-weight: bolder;
   text-decoration: none;
   border-radius: 4px;
@@ -924,6 +926,7 @@ section.plan-price {
   transition: background-color 0.3s ease;
   width: 100%;
   box-sizing: border-box;
+  font-size: 13px;
 }
 
 .price-card a:hover {
@@ -1080,7 +1083,9 @@ section.tips .content {
   background: var(--color-dark);
   height: 101vh;
 }
-
+form {
+    margin: 24px 0px 0px 0px;
+}
 .from-image-sec .image {
   float: left;
   width: 50%;
@@ -1093,7 +1098,7 @@ section.tips .content {
 }
 
 .form-sec {
-  padding: 160px 171px;
+  padding: 93px 171px;
 }
 
 .form-sec .content h5 {
@@ -1104,7 +1109,7 @@ section.tips .content {
 }
 
 .form-sec .content h3 {
-  font-size: 50px;
+  font-size: 46px;
   font-weight: 900;
   color: var(--color-white);
 }
@@ -1143,11 +1148,11 @@ section.tips .content {
 }
 
 .form-sec form input {
-  padding: 18px 15px;
+  padding: 13px 15px;
   margin: 0px 0px 20px 0px;
   width: -webkit-fill-available;
   background-color: var(--color-dark);
-  border: 2px solid white;
+  border: 1px solid white;
 }
 
 .form-sec form textarea {
@@ -1169,7 +1174,7 @@ section.tips .content {
 
 .form-sec form a {
   background: var(--color-pink);
-  padding: 20px 44px;
+  padding: 17px 28px;
   color: var(--color-white);
   margin: 23px 0;
 }

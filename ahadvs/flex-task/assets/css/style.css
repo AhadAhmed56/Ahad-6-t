@@ -175,7 +175,11 @@ header {
 .navbar nav ul li a:hover {
   color: var(--color-pink);
 }
-
+.logo-navbar .icons i {
+    color: white;
+    font-size: 18px;
+    margin: 0px 10px;
+}
 /* BANNER SECTION */
 
 .banner {

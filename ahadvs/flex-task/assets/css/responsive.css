@@ -3,9 +3,13 @@
 
 /*for-large-dekstop view-1200*/
 @media only screen and (min-width: 100px) and (max-width: 1399px) {
-.banner .content h1 {
-    font-size: 70px;
 
+.banner .content h1 {
+  font-size: 90px;
+}
+
+.banner .content h3 {
+  font-size: 70px;
 }
 
 
@@ -14,29 +18,182 @@
 /*for-laptop view-1024*/
 
 @media only screen and (min-width: 100px) and (max-width: 1199px) {
+  .banner .content h1 {
+    font-size: 70px;
+  }
 
+  .banner .content h3 {
+    font-size: 56px;
+  }
 }
 
 /*for-tablet view-768*/
 
-@media only screen and (min-width: 100px) and (max-width: 991px) {
+@media (max-width: 991px) {
 
+  .container {
+    width: 90%;
+  }
+
+  /* Banner */
+  .banner .content h1 {
+    font-size: 56px;
+  }
+
+  .banner .content h3 {
+    font-size: 44px;
+  }
+
+  /* Skills */
+  .Skill-Expect {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Skill-Expect .image img {
+    width: 100%;
+  }
+
+  /* Services */
+  .content-service-1,
+  .content-service-2 {
+    height: auto;
+    padding: 60px 30px;
+  }
+
+  .content-service-1 .service-content {
+    margin-left: 0;
+  }
+
+  /* Blog icons */
+  .blog-sec {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  /* Meet section */
+  section.meet .meet-sec {
+    flex-wrap: wrap;
+  }
+
+  /* Form */
+  .form-sec,
+  .from-image-sec .image {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+
+  .form-sec {
+    padding: 60px 40px;
+  }
 }
+
 
 /*for-landscape_mobile view-576*/
 
-@media only screen and (min-width: 100px) and (max-width: 767px) {
+@media only screen and (min-width: 100px) and (max-width: 575px) {
 
+  header {
+    padding: 1rem;
+  }
+
+  /* Banner */
+  .banner {
+    height: auto;
+    padding: 120px 1rem;
+  }
+
+  .banner .content h1 {
+    font-size: 28px;
+  }
+
+  .banner .content h3 {
+    font-size: 31px;
+  }
+
+  .content a {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  /* Decorative images hide */
+  .img-left-img,
+  .img-right-img {
+    display: none;
+  }
+
+  /* Sections padding */
+  section {
+    padding: 60px 0 !important;
+  }
+
+  /* Portfolio images */
+  .portfolio-sec .images-box img {
+    width: 100%;
+  }
+
+  /* Customer slider text */
+  .slider-customer .content-info p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* Pricing cards */
+  .plan-price .card-container {
+    gap: 20px;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  /* Scroll top */
+  .scroll-top {
+    right: 15px;
+    bottom: 20px;
+  }
 }
+
 
 /*for-mobile view-375*/
+@media only screen and (min-width: 100px) and (max-width: 374px) {
 
-@media only screen and (min-width: 100px) and (max-width: 575px) {
-  
+  .banner .content h1 {
+    font-size: 24px;
+  }
+
+  .banner .content h3 {
+    font-size: 27px;
+  }
+
+  .tips .content h3,
+  .portfolio-sec .content h3,
+  section.meet .content h3 {
+    font-size: 32px;
+  }
 }
+
 
 /*for-small_mobile view-320*/
 
 @media only screen and (min-width: 100px) and (max-width: 374px) {
+ .banner .content h1 {
+    font-size: 24px;
+  }
 
+  .banner .content h3 {
+    font-size: 27px;
+  }
 }

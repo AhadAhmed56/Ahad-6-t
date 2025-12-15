@@ -45,8 +45,6 @@ section.meet .content .underline {
     margin: 0 auto;
 }
 
-section.form .content .underline {
-}
 img {
   display: block;
   width: 100%;
@@ -97,10 +95,10 @@ section.plan-price .content {
   float: left;
 }
 
-.col-lg-6 {
+/* .col-lg-6 {
   width: 50%;
   float: left;
-}
+} */
 
 .col-lg-7 {
   width: 58.33%;
@@ -369,11 +367,23 @@ section.customer .content .underline {
 }
 
 section.service-2 .row {
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section.service-2 .row .col-lg-6 {
+    width: 50%;
+}
+section.service .row .col-lg-6 {
+    width: 50%;
 }
 
 section.service .row {
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .icon-content .content {

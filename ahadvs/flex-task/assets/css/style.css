@@ -874,6 +874,7 @@ section.plan-price {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
   padding: 63px 0px;
 }
 

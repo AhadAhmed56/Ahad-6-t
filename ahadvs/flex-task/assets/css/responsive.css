@@ -349,10 +349,34 @@ section.meet .content h5 {
 section.meet .content h3 {
     font-size: 24px;
 }
-.bg-image {height: 576px;object-fit: cover;}
+.bg-image {/* height: 576px; */object-fit: cover;padding: 0px;/* background-position: center; */}
 .bg-image .content h3 {
     color: var(--color-white);
-    font-size: 36px;
+    font-size: 30px;
+}
+.bg-image .content {
+    padding: 173px 0px;
+}
+section.tips .content h3 {
+    FONT-SIZE: 24PX;
+}
+section.tips .content h5 {
+    FONT-SIZE: 15PX;
+}
+.form-sec .content{
+  text-align: left;
+}
+.form-sec .content h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--color-white);
+    padding: 0px 0px 8px 0px;
+}
+.form-sec .content h5 {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--color-white);
+    padding: 0px 0px 8px 0px;
 }
 }
 

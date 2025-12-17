@@ -8,6 +8,7 @@
   .banner .content h3 {
     font-size: 70px;
   }
+  
 
 
 }
@@ -15,7 +16,7 @@
 /*for-laptop view-1024*/
 @media only screen and (min-width: 100px) and (max-width: 1199px) {
   .container {
-    width: 96%;
+    width: 86%;
   }
 
   .banner .content h1 {
@@ -60,6 +61,88 @@
     color: var(--color-para);
     text-align: justify;
   }
+  
+  section.service .row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section.service-2 .row {
+    flex-direction: column;
+  }
+
+  section.service .row .col-lg-6 {
+    width: 100%;
+  }
+
+  section.service-2 .row .col-lg-6 {
+    width: 100%;
+  }
+.portfolio-sec .images-box img {
+    width: 256px;
+    height: auto;
+    display: block;
+    transition: transform 0.4s 
+ease, filter 0.4s 
+ease;
+}
+ section.meet .meet-sec {
+   flex-direction: column;
+  }
+
+  /* Form */
+  .form-sec,
+  .from-image-sec .image {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .meet-sec .image img {
+    width: 700px;
+    height: 800px;
+    object-fit: cover;
+    transition: transform 0.4s 
+ease;
+}
+.nno-card {
+    width: 21%;
+}
+    .card {
+    }
+    .plan-price .price-card {
+    max-width: 480px;
+}
+.footer-image img {
+    width: 54px;
+    height: 56px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+.footer-image {
+    gap: 11px;
+}
+.from-image-sec .image img {
+  height: 56vh;
+  width: 100%;
+  object-fit: cover;
+}
+section.plan-price .card {
+    flex-direction: column;
+}
+.bg-image .content h3 {
+    color: var(--color-white);
+    font-size: 38px;
+}
+.form-sec form input {
+    padding: 18px 15px;
+    margin: 0px 0px 20px 0px;
+    width: -webkit-fill-available;
+    background-color: var(--color-dark);
+    border: 1px solid white;
+}
+section.form .content {
+    text-align: left;
+}
 }
 
 /*for-tablet view-768*/
@@ -133,7 +216,7 @@
   .content-service-1,
   .content-service-2 {
     height: auto;
-    padding: 60px 30px;
+    padding: 60px 52px;
   }
 
   .content-service-1 .service-content {
@@ -218,15 +301,8 @@ section.meet .image {
     color: var(--color-white);
     font-size: 37px;
 }
-.card {
-    flex-direction: column;
-}
-.plan-price .price-card {
-   
-min-width: 300px;
-   
-max-width: 440px;
-}
+
+
 .web-inf0 h4 {
     font-size: 32px;
 }
@@ -252,6 +328,47 @@ max-width: 440px;
     flex-wrap: wrap;
     padding-bottom: 60px;
 }
+
+  section.service .row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section.service-2 .row {
+    flex-direction: column;
+  }
+
+  section.service .row .col-lg-6 {
+    width: 100%;
+  }
+
+  section.service-2 .row .col-lg-6 {
+    width: 100%;
+  }
+.nno-card {
+   
+    width: 42%;
+}
+.plan-price .price-card {
+    background-color: var(--color-white);
+    padding: 43px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s 
+ease;
+}
+.icons i:last-child {
+    display: inline-block;
+}
+.logo-navbar .navbar {
+    display: none;
+}
+
 }
 
 /*for-landscape_mobile view-576*/
@@ -348,7 +465,7 @@ max-width: 440px;
 
 
   .card {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 30px;
   }
 
@@ -521,6 +638,7 @@ max-width: 440px;
 }
 
 
+
 /*for-small_mobile view-320*/
 @media only screen and (min-width: 100px) and (max-width: 374px) {
 
@@ -541,4 +659,6 @@ max-width: 440px;
   section.meet .content h3 {
     font-size: 32px;
   }
+ 
+  
 }

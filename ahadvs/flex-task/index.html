@@ -16,6 +16,49 @@
 
 <body>
   <div class="wrapper">
+
+    <div class="responsive-menu">
+      <div class="responsive-menu-inner">
+        <div class="resp-logo-main">
+          <div class="resp-logo">
+            <a href="/">
+              <img src="assets/images/logo-transparent.png" alt="" />
+            </a>
+          </div>
+          <div class="resp-cross">
+            <a href="#"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+          <div class="responsive-links">
+            <ul>
+                  <li>
+                    <a href="#">Home</a>
+                    <i class="fa-solid fa-caret-down"></i>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Protfolio</a>
+                  </li>
+                  <li>
+                    <a href="#">Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
+                </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <header>
       <div class="container-flaud">
         <div class="row">
@@ -53,7 +96,7 @@
             </div>
             <div class="icons">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <i class="fa-solid fa-bars-staggered"></i>
+              <i class="fa-solid fa-bars-staggered open-resp-menu"></i>
             </div>
           </div>
         </div>
@@ -776,8 +819,18 @@
     });
 
 
+jQuery(".open-resp-menu").click(function(){
+  jQuery(".responsive-menu").addClass("active");
+});
+
+jQuery(".resp-cross a").click(function(){
+  jQuery(".responsive-menu").removeClass("active");
+});
+
 
   </script>
+
+
 </body>
 
 </html>

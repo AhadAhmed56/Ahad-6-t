@@ -539,7 +539,7 @@ section.portfolio {
 
 .portfolio-sec .images-box .image {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -1412,3 +1412,495 @@ footer {
  .scroll-top i:hover{
   color: var(--color-white);
  }
+
+ /* responsive */
+ /*for-large-dekstop view-1200*/
+@media only screen and (min-width: 100px) and (max-width: 1399px) {
+
+  .banner .content h1 {
+    font-size: 90px;
+  }
+
+  .banner .content h3 {
+    font-size: 70px;
+  }
+
+
+}
+
+/*for-laptop view-1024*/
+@media only screen and (min-width: 100px) and (max-width: 1199px) {
+  .container {
+    width: 96%;
+  }
+
+  .banner .content h1 {
+    font-size: 70px;
+  }
+
+  .banner .content h3 {
+    font-size: 56px;
+  }
+
+  /* Skills */
+
+  .Skill-Expect {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .Skill-Expect .image img {
+    width: 582px;
+  }
+
+  section.Skills {
+    padding: 81px 56px;
+  }
+
+  .Skill-Expect .content h5 {
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .Skill-Expect .content h3 {
+    font-size: 40px;
+    padding: 0px;
+  }
+
+  .Skill-Expect .content p {
+    line-height: 1.9;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--color-para);
+    text-align: justify;
+  }
+}
+
+/*for-tablet view-768*/
+@media only screen and (min-width: 100px) and (max-width: 991px) {
+
+  .container {
+    /* width: 90%; */
+  }
+
+  .banner {
+    height: 744px;
+  }
+
+  /* Banner */
+  .banner .content h1 {
+    font-size: 44px;
+  }
+
+  .img-left-img {
+    position: absolute;
+    top: 563px;
+    left: 0;
+  }
+
+  .img-left-img img {
+    width: 133px;
+    display: block;
+  }
+
+  .img-right-img {
+    position: absolute;
+    top: 95px;
+    right: 2px;
+  }
+
+  .img-right-img img {
+    width: 107px;
+    display: block;
+  }
+
+  .banner .content h3 {
+    font-size: 36px;
+  }
+
+  /* Skills */
+  .Skill-Expect {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Skill-Expect .image img {
+    width: 582px;
+  }
+
+  section.Skills {
+    padding: 81px 11px;
+  }
+
+  .Skill-Expect .content h5 {
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .Skill-Expect .content h3 {
+    font-size: 40px;
+    padding: 0px;
+  }
+
+  /* Services */
+  .content-service-1,
+  .content-service-2 {
+    height: auto;
+    padding: 60px 30px;
+  }
+
+  .content-service-1 .service-content {
+    margin-left: 0;
+  }
+
+  /* Blog icons */
+  .blog-sec {
+    flex-wrap: wrap;
+  }
+
+  /* Meet section */
+  section.meet .meet-sec {
+  flex-direction: column;
+  }
+
+  /* Form */
+  .form-sec,
+  .from-image-sec .image {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+
+  .form-sec {
+    padding: 60px 40px;
+  }
+ section.service .row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section.service-2 .row {
+   flex-direction: column;
+  }
+  section.service .row .col-lg-6 {
+    width: 100%;
+}
+ section.service-2 .row .col-lg-6 {
+    width: 100%;
+}
+ .content h5 {
+    font-size: 24px;
+    color: var(--color-pink);
+}
+ .content h3 {
+    font-size: 40px;
+   
+}
+.portfolio-sec .images-box img {
+    width: 375px;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+.meet-sec .image img {
+    width: 433px;
+    height: 493px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+section.meet .image {
+    padding: 10px;
+}
+.bg-image {
+  
+    padding: 122px;
+    
+}
+.bg-image .content h3 {
+    color: var(--color-white);
+    font-size: 37px;
+}
+.card {
+    flex-direction: column;
+}
+.plan-price .price-card {
+   
+min-width: 300px;
+   
+max-width: 440px;
+}
+.web-inf0 h4 {
+    font-size: 32px;
+}
+
+.dollar-sign p {
+    font-size: 75px;
+}
+
+.card-tips .card-tips .image img {
+    width: 100px;
+}
+.tips .content h5 {
+    font-size: 24px;
+}
+.tips .content h3{
+  font-size: 40px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+}
+
+/*for-landscape_mobile view-576*/
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+  section.Skills {
+    padding: 122px;
+  }
+}
+
+
+
+/*for-mobile view-375*/
+
+@media only screen and (min-width: 100px) and (max-width: 575px) {
+
+
+  header {
+    padding: 1rem;
+  }
+
+  /* Banner */
+  .banner {
+    height: 453px;
+    background-position: center;
+  }
+
+  .banner .content h1 {
+    font-size: 23px;
+  }
+
+  .banner .content h3 {
+    font-size: 21px;
+  }
+
+  .content a {
+    padding: 16px 20px;
+    font-size: 13px;
+  }
+
+  .img-left-img {
+    position: absolute;
+    top: 324px;
+    left: 14px;
+  }
+
+  .img-left-img img {
+    width: 69px;
+    display: block;
+  }
+
+  .img-right-img {
+    position: absolute;
+    top: 98px;
+    right: 12px;
+  }
+
+  .img-right-img img {
+    width: 71px;
+    display: block;
+  }
+
+  section.banner .content {
+    padding-top: 59px;
+  }
+
+
+  section.Skills {
+    padding: 75px 17px;
+  }
+
+  /* Portfolio images */
+  .portfolio-sec .images-box img {
+    width: 100%;
+  }
+
+  /* Customer slider text */
+  .slider-customer .content-info p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* Pricing cards */
+  .plan-price .card-container {
+    gap: 20px;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+  }
+
+
+  .newsletter-form button {
+    padding: 15px;
+  }
+
+  /* Scroll top */
+  .scroll-top {
+    right: 15px;
+    bottom: 20px;
+  }
+
+  .Skill-Expect .image img {
+    width: 371px;
+  }
+
+  .Skill-Expect .content h3 {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 12px 0;
+  }
+
+  .Skill-Expect .content h5 {
+
+    font-size: 16px;
+  }
+  section.service  .container {
+        width: 34%;
+    }
+  section.service .row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section.service-2 .row {
+   flex-direction: column;
+  }
+  section.service .row .col-lg-6 {
+    width: 100%;
+}
+ section.service-2 .row .col-lg-6 {
+    width: 100%;
+}
+
+  .blog {
+    background-color: var(--color-dark);
+    padding: 142px 2px;
+  }
+  .content-service-2 h5 {
+    font-size: 24px;
+    font-family: var(--font-main);
+    color: var(--color-pink);
+    font-weight: 100;
+    font-style: italic;
+}
+.content-service-2 h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+.content-service-1 .service-content h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--color-white);
+}
+.content-service-1 .service-content h5{
+  font-size: 16px;
+}
+.portfolio-sec .content h5 {
+    font-size: 15px;
+    color: var(--color-pink);
+}
+.portfolio-sec .content h3 {
+    font-size: 24px;
+}
+.content h5 {
+    font-size: 15px;
+    font-style: italic;
+    color: var(--color-pink);
+    font-weight: 400;
+}
+.content h3 {
+    font-size: 24px;
+}
+section.meet .content h5 {
+    font-size: 15px;
+}
+section.meet .content h3 {
+    font-size: 24px;
+}
+.bg-image {/* height: 576px; */object-fit: cover;padding: 0px;/* background-position: center; */}
+.bg-image .content h3 {
+    color: var(--color-white);
+    font-size: 30px;
+}
+.bg-image .content {
+    padding: 173px 0px;
+}
+section.tips .content h3 {
+    FONT-SIZE: 24PX;
+}
+section.tips .content h5 {
+    FONT-SIZE: 15PX;
+}
+.form-sec .content{
+  text-align: left;
+}
+.form-sec .content h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--color-white);
+    padding: 0px 0px 8px 0px;
+}
+.form-sec .content h5 {
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--color-white);
+    padding: 0px 0px 8px 0px;
+}
+.footer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+.footer-image img {
+    width: 113PX;
+    height: 101px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+}
+
+
+/*for-small_mobile view-320*/
+@media only screen and (min-width: 100px) and (max-width: 374px) {
+
+  section.banner .content {
+    padding-top: 32px;
+  }
+
+  .banner .content h1 {
+    font-size: 24px;
+  }
+
+  .banner .content h3 {
+    font-size: 27px;
+  }
+
+  .tips .content h3,
+  .portfolio-sec .content h3,
+  section.meet .content h3 {
+    font-size: 32px;
+  }
+}

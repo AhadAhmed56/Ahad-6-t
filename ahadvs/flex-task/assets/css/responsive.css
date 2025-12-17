@@ -66,7 +66,7 @@
 @media only screen and (min-width: 100px) and (max-width: 991px) {
 
   .container {
-    width: 90%;
+    /* width: 90%; */
   }
 
   .banner {
@@ -153,56 +153,11 @@
   /* Blog icons */
   .blog-sec {
     flex-wrap: wrap;
-    gap: 40px;
   }
 
 
   section.meet .meet-sec {
     flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .meet-sec .image {
-    flex: 0 1 100%;
-    max-width: 400px;
-  }
-
-  .meet-sec .image img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* Customer/Slider section */
-  .slider {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .slider-customer {
-    padding: 30px 20px;
-  }
-
-  .slider-customer .content-info p {
-    font-size: 18px;
-    width: 90%;
-  }
-
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-  }
-
-  .card-tips {
-    flex: 0 1 calc(50% - 15px);
-    max-width: calc(50% - 15px);
-    min-width: 280px;
-  }
-
-  .card-tips .image img {
-    width: 100%;
-    height: auto;
   }
 
   /* Form */
@@ -216,8 +171,87 @@
   .form-sec {
     padding: 60px 40px;
   }
+ section.service .row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
 
+  section.service-2 .row {
+   flex-direction: column;
+  }
+  section.service .row .col-lg-6 {
+    width: 100%;
+}
+ section.service-2 .row .col-lg-6 {
+    width: 100%;
+}
+ .content h5 {
+    font-size: 24px;
+    color: var(--color-pink);
+}
+ .content h3 {
+    font-size: 40px;
+   
+}
+.portfolio-sec .images-box img {
+    width: 375px;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+.meet-sec .image img {
+    width: 433px;
+    height: 493px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
 
+section.meet .image {
+    padding: 10px;
+}
+.bg-image {
+  
+    padding: 122px;
+    
+}
+.bg-image .content h3 {
+    color: var(--color-white);
+    font-size: 37px;
+}
+.card {
+    flex-direction: column;
+}
+.plan-price .price-card {
+   
+min-width: 300px;
+   
+max-width: 440px;
+}
+.web-inf0 h4 {
+    font-size: 32px;
+}
+
+.dollar-sign p {
+    font-size: 75px;
+}
+
+.card-tips .card-tips .image img {
+    width: 100px;
+}
+.tips .content h5 {
+    font-size: 24px;
+}
+.tips .content h3{
+  font-size: 40px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
 }
 
 /*for-landscape_mobile view-576*/
@@ -336,15 +370,10 @@
   /* Footer */
   .footer-content {
     flex-direction: column;
-    text-align: center;
   }
 
-  .newsletter-form {
-    flex-direction: column;
-  }
 
   .newsletter-form button {
-    margin-top: 10px;
     padding: 15px;
   }
 
@@ -488,7 +517,7 @@
     font-weight: 900;
     color: var(--color-white);
     padding: 0px 0px 8px 0px;
-  }
+}
 }
 
 

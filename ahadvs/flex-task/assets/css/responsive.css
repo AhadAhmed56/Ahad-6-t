@@ -140,15 +140,69 @@
     margin-left: 0;
   }
 
+  /* Background image section */
+  .bg-image {
+    padding: 80px 20px;
+  }
+
+  .bg-image .content h3 {
+    font-size: 50px;
+    line-height: 1.3;
+  }
+
   /* Blog icons */
   .blog-sec {
     flex-wrap: wrap;
     gap: 40px;
   }
 
-  /* Meet section */
+
   section.meet .meet-sec {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .meet-sec .image {
+    flex: 0 1 100%;
+    max-width: 400px;
+  }
+
+  .meet-sec .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Customer/Slider section */
+  .slider {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .slider-customer {
+    padding: 30px 20px;
+  }
+
+  .slider-customer .content-info p {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .card-tips {
+    flex: 0 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    min-width: 280px;
+  }
+
+  .card-tips .image img {
+    width: 100%;
+    height: auto;
   }
 
   /* Form */
@@ -184,7 +238,7 @@
     padding: 1rem;
   }
 
-  /* Banner */
+
   .banner {
     height: 453px;
     background-position: center;
@@ -239,10 +293,39 @@
     width: 100%;
   }
 
-  /* Customer slider text */
+  /* Customer slider section */
+  .slider {
+    padding: 0 15px;
+  }
+
+  .slider-customer {
+    padding: 25px 15px;
+  }
+
   .slider-customer .content-info p {
     font-size: 16px;
     width: 100%;
+  }
+
+  .slider-customer .image img {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  .card {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-tips {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .card-tips .image img {
+    width: 100%;
+    height: auto;
   }
 
   /* Pricing cards */
@@ -286,98 +369,126 @@
 
     font-size: 16px;
   }
-  section.service  .container {
-        width: 34%;
-    }
+
+  section.service .container {
+    width: 34%;
+  }
+
   section.service .row {
     flex-wrap: wrap;
     flex-direction: column-reverse;
   }
 
   section.service-2 .row {
-   flex-direction: column;
+    flex-direction: column;
   }
+
   section.service .row .col-lg-6 {
     width: 100%;
-}
- section.service-2 .row .col-lg-6 {
+  }
+
+  section.service-2 .row .col-lg-6 {
     width: 100%;
-}
+  }
 
   .blog {
     background-color: var(--color-dark);
     padding: 142px 2px;
   }
+
   .content-service-2 h5 {
     font-size: 24px;
     font-family: var(--font-main);
     color: var(--color-pink);
     font-weight: 100;
     font-style: italic;
-}
-.content-service-2 h3 {
+  }
+
+  .content-service-2 h3 {
     font-size: 24px;
     font-weight: 900;
-}
-.content-service-1 .service-content h3 {
+  }
+
+  .content-service-1 .service-content h3 {
     font-size: 24px;
     font-weight: 900;
     color: var(--color-white);
-}
-.content-service-1 .service-content h5{
-  font-size: 16px;
-}
-.portfolio-sec .content h5 {
+  }
+
+  .content-service-1 .service-content h5 {
+    font-size: 16px;
+  }
+
+  .portfolio-sec .content h5 {
     font-size: 15px;
     color: var(--color-pink);
-}
-.portfolio-sec .content h3 {
+  }
+
+  .portfolio-sec .content h3 {
     font-size: 24px;
-}
-.content h5 {
+  }
+
+  .content h5 {
     font-size: 15px;
     font-style: italic;
     color: var(--color-pink);
     font-weight: 400;
-}
-.content h3 {
+  }
+
+  .content h3 {
     font-size: 24px;
-}
-section.meet .content h5 {
+  }
+
+  section.meet .content h5 {
     font-size: 15px;
-}
-section.meet .content h3 {
+  }
+
+  section.meet .content h3 {
     font-size: 24px;
-}
-.bg-image {/* height: 576px; */object-fit: cover;padding: 0px;/* background-position: center; */}
-.bg-image .content h3 {
+  }
+
+  .bg-image {
+    /* height: 576px; */
+    object-fit: cover;
+    padding: 60px 15px;
+    /* background-position: center; */
+  }
+
+  .bg-image .content h3 {
     color: var(--color-white);
-    font-size: 30px;
-}
-.bg-image .content {
-    padding: 173px 0px;
-}
-section.tips .content h3 {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  .bg-image .content {
+    padding: 80px 0px;
+  }
+
+  section.tips .content h3 {
     FONT-SIZE: 24PX;
-}
-section.tips .content h5 {
+  }
+
+  section.tips .content h5 {
     FONT-SIZE: 15PX;
-}
-.form-sec .content{
-  text-align: left;
-}
-.form-sec .content h3 {
+  }
+
+  .form-sec .content {
+    text-align: left;
+  }
+
+  .form-sec .content h3 {
     font-size: 24px;
     font-weight: 900;
     color: var(--color-white);
     padding: 0px 0px 8px 0px;
-}
-.form-sec .content h5 {
+  }
+
+  .form-sec .content h5 {
     font-size: 15px;
     font-weight: 900;
     color: var(--color-white);
     padding: 0px 0px 8px 0px;
-}
+  }
 }
 
 

@@ -35,41 +35,47 @@ a {
 li {
   list-style: none;
 }
+
 section.customer {
-    padding: 86px 0px;
-    background-color: var(--color-sky);
+  padding: 86px 0px;
+  background-color: var(--color-sky);
 }
-  
+
 
 section.meet .content .underline {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 img {
   display: block;
   width: 100%;
 }
+
 .wrapper {
   overflow: hidden;
   position: relative;
 }
+
 section.plan-price .content {
-    text-align: center;
+  text-align: center;
 }
 
 .content h5 {
-    font-size: 30px;
-    font-style: italic;
-    color: var(--color-pink);
-    font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+  color: var(--color-pink);
+  font-weight: 400;
 }
-.content h3{
+
+.content h3 {
   font-size: 40px;
   padding: 11px;
 }
+
 .Skill-Expect .content .underline {
-    margin-top: 18px;
+  margin-top: 18px;
 }
+
 .col-lg-1 {
   width: 8.33%;
   float: left;
@@ -173,11 +179,13 @@ header {
 .navbar nav ul li a:hover {
   color: var(--color-pink);
 }
+
 .logo-navbar .icons i {
-    color: white;
-    font-size: 18px;
-    margin: 0px 10px;
+  color: white;
+  font-size: 18px;
+  margin: 0px 10px;
 }
+
 /* BANNER SECTION */
 
 .banner {
@@ -209,7 +217,9 @@ header {
   z-index: 2;
 }
 
-.content {text-align: center;}
+.content {
+  text-align: center;
+}
 
 /* Banner heading */
 .banner .content h1 {
@@ -282,7 +292,10 @@ section.Skills {
 }
 
 
-.Skill-Expect .content {text-align: left;}
+.Skill-Expect .content {
+  text-align: left;
+}
+
 .Skill-Expect .image img {
   width: 507px;
 }
@@ -322,7 +335,7 @@ section.Skills {
 /* .content-service-1 */
 .content-service-1 {
   background-color: var(--color-dark);
-  height: 71.5vh;
+  height: 74.6vh;
   padding: 80px 64px;
 }
 
@@ -362,32 +375,35 @@ section.Skills {
   text-align: justify;
   margin-bottom: 30px;
 }
+
 section.customer .content .underline {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 section.service-2 .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
 section.service-2 .row .col-lg-6 {
-    width: 50%;
+  width: 50%;
 }
+
 section.service .row .col-lg-6 {
-    width: 50%;
+  width: 50%;
 }
 
 section.service .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .icon-content .content {
-    text-align: left;
+  text-align: left;
 }
 
 /* Button */
@@ -413,7 +429,7 @@ section.service .row {
 /* content-service-2 */
 .content-service-2 {
   background-color: var(--color-sky);
-  height: 524px;
+  height: 655px;
   padding: 100px 64px;
 }
 
@@ -469,37 +485,45 @@ section.service .row {
 /* blog-sec */
 .blog {
   background-color: var(--color-dark);
-  padding: 142px 2px;
+  padding: 148px 0;
 }
 
 .blog-sec {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 72px;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .icon-content {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 0px;
+  gap: 20px;
 }
 
 .icon-content .icons i {
-  color: #f5325c;
-  font-size: 65px;
+  color: var(--color-pink);
+  font-size: 55px;
+}
+
+.icon-content .content {
+  text-align: left;
 }
 
 .icon-content .content h2 {
-  font-size: 50px;
-  color: white;
-  font-weight: 700;
+  font-size: 55px;
+  color: var(--color-white);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 5px;
 }
 
 .icon-content .content h4 {
-  color: white;
-  font-size: 15px;
+  color: var(--color-white);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 /* portfolio-sec */
@@ -544,7 +568,7 @@ section.portfolio {
 }
 
 .portfolio-sec .images-box img {
-  width: 381px;
+  width: 476px;
   height: auto;
   display: block;
   transition: transform 0.4s ease, filter 0.4s ease;
@@ -609,9 +633,10 @@ section.portfolio {
 /* Customer Section */
 
 section.customer {
-    background-color: var(--color-sky);
-    padding: 103px 0px;
+  background-color: var(--color-sky);
+  padding: 103px 0px;
 }
+
 .customer-sec-1 .content {
   text-align: center;
 }
@@ -629,7 +654,7 @@ section.customer {
 }
 
 section.customer .content .underline {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 /* Slider  */
@@ -730,12 +755,15 @@ section.meet {
   background-color: var(--color-dark);
   padding: 133px 0;
 }
+
 section.plan-price .content {
-    text-align: center;
+  text-align: center;
 }
-section.plan-price .content .underline{
+
+section.plan-price .content .underline {
   margin: 0 auto;
 }
+
 section.meet .meet-sec {
   display: flex;
   justify-content: center;
@@ -760,6 +788,7 @@ section.meet .image {
   object-fit: cover;
   transition: transform 0.4s ease;
 }
+
 /* Overlay */
 section.meet .image .overlay-text {
   position: absolute;
@@ -784,7 +813,7 @@ section.meet .image .overlay-text {
 /* Smooth hover effect */
 section.meet .image:hover .overlay-text {
   opacity: 0.9;
-  transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -826,9 +855,11 @@ section.meet .overlay-text ul li a {
   font-size: 20px;
   transition: color 0.3s ease;
 }
+
 section.meet .overlay-text ul li a i {
-    font-size: 16px;
+  font-size: 16px;
 }
+
 section.meet .overlay-text ul li a:hover {
   color: var(--color-primary);
 }
@@ -1128,9 +1159,11 @@ section.tips .content {
   background: var(--color-dark);
   height: 101vh;
 }
+
 form {
-    margin: 24px 0px 0px 0px;
+  margin: 24px 0px 0px 0px;
 }
+
 .from-image-sec .image {
   float: left;
   width: 50%;
@@ -1397,7 +1430,7 @@ footer {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
   z-index: 99;
-  border: 2px solid  var(--color-pink);
+  border: 2px solid var(--color-pink);
 }
 
 .scroll-top:hover {
@@ -1405,29 +1438,31 @@ footer {
   color: var(--color-white);
   transform: translateY(-5px);
 }
-.scroll-top i{
+
+.scroll-top i {
   font-size: 14px;
   color: var(--color-pink);
 }
- .scroll-top i:hover{
-  color: var(--color-white);
- }
 
-.icons i:last-child {
-    display: none;
+.scroll-top i:hover {
+  color: var(--color-white);
+}
+
+.logo-navbar .icons i:last-child {
+  display: none;
 }
 
 .responsive-menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 9999;
-    transition: all .5s;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  transition: all .5s;
 }
 
 .responsive-menu.active {
-    left: 0;
+  left: 0;
 }

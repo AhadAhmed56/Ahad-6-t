@@ -143,6 +143,12 @@ section.plan-price .card {
 section.form .content {
     text-align: left;
 }
+.icon-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+}
 }
 
 /*for-tablet view-768*/
@@ -240,7 +246,7 @@ section.form .content {
 
 
   section.meet .meet-sec {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   /* Form */
@@ -368,6 +374,12 @@ ease;
 .logo-navbar .navbar {
     display: none;
 }
+.icon-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 30;
+}
 
 }
 
@@ -488,7 +500,19 @@ ease;
   .footer-content {
     flex-direction: column;
   }
-
+.content-service-1 .service-content a {
+    background-color: transparent;
+    border: none;
+    padding: 1rem 2.5rem;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 2px solid var(--color-white);
+}
 
   .newsletter-form button {
     padding: 15px;
@@ -499,7 +523,12 @@ ease;
     right: 15px;
     bottom: 20px;
   }
-
+.portfolio-sec .content .underline {
+    background-color: var(--color-pink);
+    width: 80px;
+    height: 5px;
+    margin: 0 auto;
+}
   .Skill-Expect .image img {
     width: 371px;
   }
@@ -635,6 +664,43 @@ ease;
     color: var(--color-white);
     padding: 0px 0px 8px 0px;
 }
+.icon-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.portfolio-sec .images-box .image {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 12px;
+}
+.plan-price .price-card {
+        background-color: var(--color-white);
+        padding: 43px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        flex: 1;
+        min-width: 300px;
+        max-width: 392px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+    }
+    section.plan-price {
+    background-color: var(--color-sky);
+    padding: 55px 0px;
+}
+    .nno-card {
+        width: 100%;
+    }
+        .footer-image img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
 }
 
 

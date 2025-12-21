@@ -8,7 +8,7 @@
   .banner .content h3 {
     font-size: 70px;
   }
-  
+
 
 
 }
@@ -61,7 +61,7 @@
     color: var(--color-para);
     text-align: justify;
   }
-  
+
   section.service .row {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -78,16 +78,16 @@
   section.service-2 .row .col-lg-6 {
     width: 100%;
   }
-.portfolio-sec .images-box img {
+
+  .portfolio-sec .images-box img {
     width: 256px;
     height: auto;
     display: block;
-    transition: transform 0.4s 
-ease, filter 0.4s 
-ease;
-}
- section.meet .meet-sec {
-   flex-direction: column;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  section.meet .meet-sec {
+    flex-direction: column;
   }
 
   /* Form */
@@ -97,65 +97,73 @@ ease;
     float: none;
     height: auto;
   }
+
   .meet-sec .image img {
     width: 700px;
     height: 800px;
     object-fit: cover;
-    transition: transform 0.4s 
-ease;
-}
-.nno-card {
+    transition: transform 0.4s ease;
+  }
+
+  .nno-card {
     width: 21%;
-}
-    .card {
-    }
-    .plan-price .price-card {
+  }
+
+  .plan-price .price-card {
     max-width: 480px;
-}
-.footer-image img {
+  }
+
+  .footer-image img {
     width: 54px;
     height: 56px;
     object-fit: cover;
     margin-bottom: 0;
-}
-.footer-image {
+  }
+
+  .footer-image {
     gap: 11px;
-}
-.from-image-sec .image img {
-  height: 56vh;
-  width: 100%;
-  object-fit: cover;
-}
-section.plan-price .card {
+  }
+
+  .from-image-sec .image img {
+    height: 56vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  section.plan-price .card {
     flex-direction: column;
-}
-.bg-image .content h3 {
+  }
+
+  .bg-image .content h3 {
     color: var(--color-white);
     font-size: 38px;
-}
-.form-sec form input {
+  }
+
+  .form-sec form input {
     padding: 18px 15px;
     margin: 0px 0px 20px 0px;
     width: -webkit-fill-available;
     background-color: var(--color-dark);
     border: 1px solid white;
-}
-section.form .content {
+  }
+
+  section.form .content {
     text-align: left;
-}
-.icon-content {
+  }
+
+  .icon-content {
     display: flex;
     align-items: center;
     gap: 20px;
     width: 30%;
-}
+  }
 }
 
 /*for-tablet view-768*/
 @media only screen and (min-width: 100px) and (max-width: 991px) {
 
   .container {
-    /* width: 90%; */
+    width: 90%;
   }
 
   .banner {
@@ -245,8 +253,8 @@ section.form .content {
   }
 
 
-  section.meet .meet-sec {
-    /* flex-wrap: wrap; */
+  .card {
+    flex-wrap: wrap;
   }
 
   /* Form */
@@ -260,80 +268,26 @@ section.form .content {
   .form-sec {
     padding: 60px 40px;
   }
- section.service .row {
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+
+  .footer-image {
+    gap: 7px;
   }
 
-  section.service-2 .row {
-   flex-direction: column;
+  .footer-image img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 0;
   }
-  section.service .row .col-lg-6 {
+
+  .newsletter-form input {
     width: 100%;
-}
- section.service-2 .row .col-lg-6 {
-    width: 100%;
-}
- .content h5 {
-    font-size: 24px;
-    color: var(--color-pink);
-}
- .content h3 {
-    font-size: 40px;
-   
-}
-.portfolio-sec .images-box img {
-    width: 375px;
-    height: auto;
-    display: block;
-    transition: transform 0.4s ease, filter 0.4s ease;
-}
-.meet-sec .image img {
-    width: 433px;
-    height: 493px;
-    object-fit: contain;
-    transition: transform 0.4s ease;
-}
-
-section.meet .image {
-    padding: 10px;
-}
-.bg-image {
-  
-    padding: 122px;
-    
-}
-.bg-image .content h3 {
-    color: var(--color-white);
-    font-size: 37px;
-}
-
-
-.web-inf0 h4 {
-    font-size: 32px;
-}
-
-.dollar-sign p {
-    font-size: 75px;
-}
-
-.card-tips .card-tips .image img {
-    width: 100px;
-}
-.tips .content h5 {
-    font-size: 24px;
-}
-.tips .content h3{
-  font-size: 40px;
-}
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
-    padding-bottom: 60px;
-}
+    padding: 20px;
+    border: none;
+    background-color: var(--color-white);
+    color: #333;
+    outline: none;
+    font-size: 14px;
+  }
 
   section.service .row {
     flex-wrap: wrap;
@@ -351,11 +305,99 @@ section.meet .image {
   section.service-2 .row .col-lg-6 {
     width: 100%;
   }
-.nno-card {
-   
+
+  .content h5 {
+    font-size: 24px;
+    color: var(--color-pink);
+  }
+
+  .content h3 {
+    font-size: 40px;
+
+  }
+
+  .portfolio-sec .images-box img {
+    width: 375px;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  .meet-sec .image img {
+    width: 433px;
+    height: 493px;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+  }
+
+  section.meet .image {
+    padding: 10px;
+  }
+
+  .bg-image {
+
+    padding: 122px;
+
+  }
+
+  .bg-image .content h3 {
+    color: var(--color-white);
+    font-size: 37px;
+  }
+
+
+  .web-inf0 h4 {
+    font-size: 32px;
+  }
+
+  .dollar-sign p {
+    font-size: 75px;
+  }
+
+  .card-tips .card-tips .image img {
+    width: 100px;
+  }
+
+  .tips .content h5 {
+    font-size: 24px;
+  }
+
+  .tips .content h3 {
+    font-size: 40px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+  }
+
+  section.service .row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  section.service-2 .row {
+    flex-direction: column;
+  }
+
+  section.service .row .col-lg-6 {
+    width: 100%;
+  }
+
+  section.service-2 .row .col-lg-6 {
+    width: 100%;
+  }
+
+  .nno-card {
+
     width: 42%;
-}
-.plan-price .price-card {
+  }
+
+  .plan-price .price-card {
     background-color: var(--color-white);
     padding: 43px;
     border-radius: 8px;
@@ -365,21 +407,27 @@ section.meet .image {
     max-width: 350px;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s 
-ease;
-}
-.icons i:last-child {
+    transition: transform 0.3s ease;
+  }
+
+  .card-tips {
+    width: 47%;
+  }
+
+  .icons i:last-child {
     display: inline-block;
-}
-.logo-navbar .navbar {
+  }
+
+  .logo-navbar .navbar {
     display: none;
-}
-.icon-content {
+  }
+
+  .icon-content {
     display: flex;
     align-items: center;
     gap: 20px;
     width: 30;
-}
+  }
 
 }
 
@@ -387,6 +435,14 @@ ease;
 @media only screen and (min-width: 100px) and (max-width: 767px) {
   section.Skills {
     padding: 122px;
+  }
+
+  .logo-navbar .navbar {
+    display: none;
+  }
+
+  .logo-navbar .icons i:last-child {
+    display: inline-block;
   }
 }
 
@@ -399,6 +455,14 @@ ease;
 
   header {
     padding: 1rem;
+  }
+
+  .logo-navbar .navbar {
+    display: none;
+  }
+
+  .logo-navbar .icons i:last-child {
+    display: inline-block;
   }
 
 
@@ -500,7 +564,8 @@ ease;
   .footer-content {
     flex-direction: column;
   }
-.content-service-1 .service-content a {
+
+  .content-service-1 .service-content a {
     background-color: transparent;
     border: none;
     padding: 1rem 2.5rem;
@@ -512,7 +577,7 @@ ease;
     text-decoration: none;
     transition: background-color 0.3s ease;
     border: 2px solid var(--color-white);
-}
+  }
 
   .newsletter-form button {
     padding: 15px;
@@ -523,12 +588,14 @@ ease;
     right: 15px;
     bottom: 20px;
   }
-.portfolio-sec .content .underline {
+
+  .portfolio-sec .content .underline {
     background-color: var(--color-pink);
     width: 80px;
     height: 5px;
     margin: 0 auto;
-}
+  }
+
   .Skill-Expect .image img {
     width: 371px;
   }
@@ -663,44 +730,50 @@ ease;
     font-weight: 900;
     color: var(--color-white);
     padding: 0px 0px 8px 0px;
-}
-.icon-content {
+  }
+
+  .icon-content {
     display: flex;
     align-items: center;
     gap: 20px;
     width: 100%;
-}
-.portfolio-sec .images-box .image {
+  }
+
+  .portfolio-sec .images-box .image {
     position: relative;
     overflow: hidden;
     cursor: pointer;
     margin: 0 12px;
-}
-.plan-price .price-card {
-        background-color: var(--color-white);
-        padding: 43px;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-        flex: 1;
-        min-width: 300px;
-        max-width: 392px;
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.3s ease;
-    }
-    section.plan-price {
+  }
+
+  .plan-price .price-card {
+    background-color: var(--color-white);
+    padding: 43px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-width: 300px;
+    max-width: 392px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+
+  section.plan-price {
     background-color: var(--color-sky);
     padding: 55px 0px;
-}
-    .nno-card {
-        width: 100%;
-    }
-        .footer-image img {
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        margin-bottom: 0;
-    }
+  }
+
+  .nno-card {
+    width: 100%;
+  }
+
+  .footer-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
 }
 
 
@@ -725,6 +798,6 @@ ease;
   section.meet .content h3 {
     font-size: 32px;
   }
- 
-  
+
+
 }

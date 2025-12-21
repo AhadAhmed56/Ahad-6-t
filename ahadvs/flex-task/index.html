@@ -16,7 +16,7 @@
 
 <body>
   <div class="wrapper">
-
+    <!-- responisve menu -->
     <div class="responsive-menu">
       <div class="responsive-menu-inner">
         <div class="resp-logo-main">
@@ -821,12 +821,14 @@
     });
 
 
-    jQuery(".open-resp-menu").click(function () {
-      jQuery(".responsive-menu").addClass("active");
-    });
+    jQuery(document).ready(function ($) {
+      $(".open-resp-menu").click(function () {
+        $(".responsive-menu").addClass("active");
+      });
 
-    jQuery(".resp-cross a").click(function () {
-      jQuery(".responsive-menu").removeClass("active");
+      $(".resp-cross a").click(function () {
+        $(".responsive-menu").removeClass("active");
+      });
     });
 
 

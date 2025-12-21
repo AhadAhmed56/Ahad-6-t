@@ -1450,19 +1450,104 @@ footer {
 
 .logo-navbar .icons i:last-child {
   display: none;
+  cursor: pointer;
 }
 
+/* Sidebar Responsive Menu Design */
 .responsive-menu {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 100%;
+  width: 300px;
+  width: 300px;
   height: 100%;
-  background-color: white;
   z-index: 9999;
-  transition: all .5s;
+  transition: all 0.4s ease;
+  background-color: #24182e;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .responsive-menu.active {
   left: 0;
+}
+
+.responsive-menu-inner {
+  padding: 0;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.resp-logo-main {
+  padding: 20px;
+}
+
+.resp-logo {
+  display: none;
+}
+
+.resp-cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.resp-cross a i {
+  color: var(--color-white);
+  font-size: 24px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.resp-cross a i:hover {
+  color: var(--color-pink);
+  transform: rotate(90deg);
+}
+
+.responsive-links {
+  margin-top: 10px;
+}
+
+.responsive-links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.responsive-links ul li {
+  padding: 15px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.responsive-links ul li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.responsive-links ul li a {
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-para);
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  width: 100%;
+  display: block;
+}
+
+.responsive-links ul li a:hover {
+  color: var(--color-pink);
+  padding-left: 5px;
+}
+
+.responsive-links ul li i {
+  color: var(--color-white);
+  font-size: 12px;
+  display: block;
 }

@@ -1,5 +1,5 @@
 /*for-large-dekstop view-1200*/
-@media only screen and (min-width: 100px) and (max-width: 1399px) {
+@media only screen and (min-width: 100px) and (max-width: 1440px) {
 
   .container {
     width: 1091px;
@@ -47,16 +47,6 @@
     color: var(--color-para);
     text-align: justify;
   }
-
-  section.service .row {
-    /* flex-wrap: wrap; */
-    /* flex-direction: column-reverse; */
-  }
-
-  section.service-2 .row {
-    /* flex-direction: column; */
-  }
-
   section.service .row .col-lg-6 {
     width: 50%;
   }
@@ -65,19 +55,29 @@
     width: 50%;
   }
 
+  .service-2 .image img {
+    height: 72vh;
+  }
+  .service .image img {
+    height: 72vh;
+  }
+
   .portfolio-sec .images-box img {
-    width: 349px;
+    width: 360px;
     height: auto;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
   }
 
-  section.meet .meet-sec {
-  }
+ .content-service-2 {
+    background-color: var(--color-sky);
+    height: 72vh;
+    padding: 100px 64px;
+}
 
   /* Form */
   .form-sec {
-  padding: 93px  74px;
+    padding: 93px 74px;
   }
 
   .meet-sec .image img {
@@ -111,10 +111,6 @@
     width: 100%;
     object-fit: cover;
   }
-
-  section.plan-price .card {
-  }
-
   .bg-image .content h3 {
     color: var(--color-white);
     font-size: 69px;
@@ -138,8 +134,22 @@
     gap: 20px;
     width: 30%;
   }
+  
 
-
+.slider-customer .content-info p {
+    color: rgb(37, 35, 35);
+    line-height: 1.6;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+    width: 70%;
+    margin: 0px auto;
+}
+.slider-customer .info P {
+    font-size: 20px;
+    color: rgb(36, 24, 46);
+    font-weight: 800;
+}
 }
 
 /*for-laptop view-1024*/
@@ -147,42 +157,31 @@
   .container {
     width: 86%;
   }
-
   .banner .content h1 {
     font-size: 70px;
   }
-
   .banner .content h3 {
     font-size: 56px;
   }
-
-  /* Skills */
-
   .Skill-Expect {
     flex-direction: column;
     text-align: center;
   }
-
-
   .Skill-Expect .image img {
     width: 582px;
   }
-
   section.Skills {
     padding: 81px 56px;
   }
-
   .Skill-Expect .content h5 {
     font-size: 25px;
     font-weight: 100;
     font-style: italic;
   }
-
   .Skill-Expect .content h3 {
     font-size: 40px;
     padding: 0px;
   }
-
   .Skill-Expect .content p {
     line-height: 1.9;
     margin-top: 16px;
@@ -190,7 +189,6 @@
     color: var(--color-para);
     text-align: justify;
   }
-
   section.service .row {
     flex-wrap: wrap;
     flex-direction: column-reverse;
@@ -219,7 +217,7 @@
     flex-direction: column;
   }
 
-  /* Form */
+
   .form-sec,
   .from-image-sec .image {
     width: 100%;
@@ -286,6 +284,21 @@
     gap: 20px;
     width: 30%;
   }
+
+.slider-customer .content-info p {
+    color: rgb(37, 35, 35);
+    line-height: 1.6;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+    width: 70%;
+    margin: 0px auto;
+}
+.slider-customer .info P {
+    font-size: 20px;
+    color: rgb(36, 24, 46);
+    font-weight: 800;
+}
 }
 
 /*for-tablet view-768*/
@@ -558,6 +571,21 @@
     width: 30;
   }
 
+.slider-customer .content-info p {
+    color: rgb(37, 35, 35);
+    line-height: 1.6;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+    width: 97%;
+    margin: 0px auto;
+}
+.slider-customer .info P {
+    font-size: 15px;
+    color: rgb(36, 24, 46);
+    font-weight: 600;
+    COLOR: var(--color-pink);
+}
 }
 
 /*for-landscape_mobile view-576*/
@@ -573,6 +601,22 @@
   .logo-navbar .icons i:last-child {
     display: inline-block;
   }
+  
+
+.slider-customer .content-info p {
+    color: rgb(37, 35, 35);
+    line-height: 1.6;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+    width: 70%;
+    margin: 0px auto;
+}
+.slider-customer .info P {
+    font-size: 20px;
+    color: rgb(36, 24, 46);
+    font-weight: 800;
+}
 }
 
 
@@ -670,7 +714,6 @@
 
 
   .card {
-    /* flex-direction: column; */
     gap: 30px;
   }
 
@@ -819,10 +862,8 @@
   }
 
   .bg-image {
-    /* height: 576px; */
     object-fit: cover;
     padding: 60px 15px;
-    /* background-position: center; */
   }
 
   .bg-image .content h3 {
@@ -903,6 +944,22 @@
     object-fit: cover;
     margin-bottom: 0;
   }
+  
+
+.slider-customer .content-info p {
+    color: rgb(37, 35, 35);
+    line-height: 1.6;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+    width: 70%;
+    margin: 0px auto;
+}
+.slider-customer .info P{
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-pink);
+}
 }
 
 
@@ -928,5 +985,20 @@
     font-size: 32px;
   }
 
+
+.slider-customer .content-info p {
+    color: rgb(37, 35, 35);
+    line-height: 1.6;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+    width: 70%;
+    margin: 0px auto;
+}
+.slider-customer .info P {
+    font-size: 20px;
+    color: rgb(36, 24, 46);
+    font-weight: 800;
+}
 
 }

@@ -1,14 +1,143 @@
 /*for-large-dekstop view-1200*/
 @media only screen and (min-width: 100px) and (max-width: 1399px) {
 
-  .banner .content h1 {
-    font-size: 90px;
+  .container {
+    width: 1091px;
   }
 
-  .banner .content h3 {
+  .banner .content h1 {
     font-size: 70px;
   }
 
+  .banner .content h3 {
+    font-size: 56px;
+  }
+
+  /* Skills */
+
+  .Skill-Expect {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .Skill-Expect .image img {
+    width: 582px;
+  }
+
+  section.Skills {
+    padding: 81px 56px;
+  }
+
+  .Skill-Expect .content h5 {
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .Skill-Expect .content h3 {
+    font-size: 40px;
+    padding: 0px;
+  }
+
+  .Skill-Expect .content p {
+    line-height: 1.9;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--color-para);
+    text-align: justify;
+  }
+
+  section.service .row {
+    /* flex-wrap: wrap; */
+    /* flex-direction: column-reverse; */
+  }
+
+  section.service-2 .row {
+    /* flex-direction: column; */
+  }
+
+  section.service .row .col-lg-6 {
+    width: 50%;
+  }
+
+  section.service-2 .row .col-lg-6 {
+    width: 50%;
+  }
+
+  .portfolio-sec .images-box img {
+    width: 349px;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+
+  section.meet .meet-sec {
+  }
+
+  /* Form */
+  .form-sec {
+  padding: 93px  74px;
+  }
+
+  .meet-sec .image img {
+    width: 343px;
+    height: 420px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .nno-card {
+    width: 21%;
+  }
+
+  .plan-price .price-card {
+    max-width: 480px;
+  }
+
+  .footer-image img {
+    width: 54px;
+    height: 56px;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+
+  .footer-image {
+    gap: 11px;
+  }
+
+  .from-image-sec .image img {
+    height: 101vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  section.plan-price .card {
+  }
+
+  .bg-image .content h3 {
+    color: var(--color-white);
+    font-size: 69px;
+  }
+
+  .form-sec form input {
+    padding: 18px 15px;
+    margin: 0px 0px 20px 0px;
+    width: -webkit-fill-available;
+    background-color: var(--color-dark);
+    border: 1px solid white;
+  }
+
+  section.form .content {
+    text-align: left;
+  }
+
+  .icon-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+  }
 
 
 }
@@ -769,8 +898,8 @@
   }
 
   .footer-image img {
-    width: 100px;
-    height: 100px;
+    width: 119px;
+    height: 119px;
     object-fit: cover;
     margin-bottom: 0;
   }

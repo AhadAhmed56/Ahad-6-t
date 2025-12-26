@@ -1,5 +1,5 @@
 /*for-large-dekstop view-1200*/
-@media only screen and (min-width: 100px) and (max-width: 1440px) {
+@media only screen and (min-width: 100px) and (max-width: 1399px) {
 
   .container {
     width: 1091px;
@@ -15,10 +15,7 @@
 
   /* Skills */
 
-  .Skill-Expect {
-    flex-direction: column;
-    text-align: center;
-  }
+  .Skill-Expect {}
 
 
   .Skill-Expect .image img {
@@ -47,6 +44,7 @@
     color: var(--color-para);
     text-align: justify;
   }
+
   section.service .row .col-lg-6 {
     width: 50%;
   }
@@ -58,22 +56,23 @@
   .service-2 .image img {
     height: 72vh;
   }
+
   .service .image img {
     height: 72vh;
   }
 
   .portfolio-sec .images-box img {
-    width: 360px;
+    width: 349px;
     height: auto;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
   }
 
- .content-service-2 {
+  .content-service-2 {
     background-color: var(--color-sky);
     height: 72vh;
     padding: 100px 64px;
-}
+  }
 
   /* Form */
   .form-sec {
@@ -111,6 +110,7 @@
     width: 100%;
     object-fit: cover;
   }
+
   .bg-image .content h3 {
     color: var(--color-white);
     font-size: 69px;
@@ -132,11 +132,10 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    width: 30%;
   }
-  
 
-.slider-customer .content-info p {
+
+  .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
     font-size: 23px;
@@ -144,44 +143,53 @@
     font-weight: 400;
     width: 70%;
     margin: 0px auto;
-}
-.slider-customer .info P {
+  }
+
+  .slider-customer .info P {
     font-size: 20px;
     color: rgb(36, 24, 46);
     font-weight: 800;
-}
+  }
+
+  .content-service-1 .service-content {
+    margin-left: 0px;
+  }
 }
 
 /*for-laptop view-1024*/
 @media only screen and (min-width: 100px) and (max-width: 1199px) {
   .container {
-    width: 86%;
+    width: 956px;
   }
+
   .banner .content h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
+
   .banner .content h3 {
     font-size: 56px;
   }
-  .Skill-Expect {
-    flex-direction: column;
-    text-align: center;
-  }
+
+
   .Skill-Expect .image img {
     width: 582px;
   }
+
   section.Skills {
     padding: 81px 56px;
   }
+
   .Skill-Expect .content h5 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     font-style: italic;
   }
+
   .Skill-Expect .content h3 {
-    font-size: 40px;
+    font-size: 35px;
     padding: 0px;
   }
+
   .Skill-Expect .content p {
     line-height: 1.9;
     margin-top: 16px;
@@ -189,9 +197,14 @@
     color: var(--color-para);
     text-align: justify;
   }
+
   section.service .row {
     flex-wrap: wrap;
     flex-direction: column-reverse;
+  }
+
+  .service .image img {
+    height: 72vh;
   }
 
   section.service-2 .row {
@@ -213,10 +226,12 @@
     transition: transform 0.4s ease, filter 0.4s ease;
   }
 
-  section.meet .meet-sec {
-    flex-direction: column;
-  }
 
+
+.slick-slide img {
+    display: block;
+    width: 178px;
+}
 
   .form-sec,
   .from-image-sec .image {
@@ -226,10 +241,9 @@
   }
 
   .meet-sec .image img {
-    width: 700px;
-    height: 800px;
     object-fit: cover;
     transition: transform 0.4s ease;
+    width: 300px;
   }
 
   .nno-card {
@@ -241,14 +255,14 @@
   }
 
   .footer-image img {
-    width: 54px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     object-fit: cover;
     margin-bottom: 0;
   }
 
   .footer-image {
-    gap: 11px;
+    gap: 9px;
   }
 
   .from-image-sec .image img {
@@ -257,19 +271,15 @@
     object-fit: cover;
   }
 
-  section.plan-price .card {
-    flex-direction: column;
-  }
 
   .bg-image .content h3 {
     color: var(--color-white);
-    font-size: 38px;
+    font-size: 35px;
   }
 
   .form-sec form input {
     padding: 18px 15px;
     margin: 0px 0px 20px 0px;
-    width: -webkit-fill-available;
     background-color: var(--color-dark);
     border: 1px solid white;
   }
@@ -278,14 +288,7 @@
     text-align: left;
   }
 
-  .icon-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 30%;
-  }
-
-.slider-customer .content-info p {
+  .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
     font-size: 23px;
@@ -293,12 +296,18 @@
     font-weight: 400;
     width: 70%;
     margin: 0px auto;
-}
-.slider-customer .info P {
+  }
+
+  .slider-customer .info P {
     font-size: 20px;
     color: rgb(36, 24, 46);
     font-weight: 800;
-}
+  }
+
+  .blog-sec {
+    gap: 38px;
+  }
+
 }
 
 /*for-tablet view-768*/
@@ -321,6 +330,16 @@
     position: absolute;
     top: 563px;
     left: 0;
+  }
+
+  .service .image img {
+    height: 450px;
+    object-fit: cover;
+  }
+
+  .service-2 .image img {
+    height: 450px;
+    object-fit: cover;
   }
 
   .img-left-img img {
@@ -374,6 +393,12 @@
     height: auto;
     padding: 60px 52px;
   }
+  
+
+.slick-slide img {
+    display: block;
+    width: 162px;
+}
 
   .content-service-1 .service-content {
     margin-left: 0;
@@ -556,22 +581,16 @@
     width: 47%;
   }
 
-  .icons i:last-child {
-    display: inline-block;
-  }
-
+ 
   .logo-navbar .navbar {
     display: none;
   }
 
   .icon-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    width: 30;
+    width: 218px;
   }
 
-.slider-customer .content-info p {
+  .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
     font-size: 23px;
@@ -579,13 +598,30 @@
     font-weight: 400;
     width: 97%;
     margin: 0px auto;
-}
-.slider-customer .info P {
+  }
+
+  .slider-customer .info P {
     font-size: 15px;
     color: rgb(36, 24, 46);
     font-weight: 600;
     COLOR: var(--color-pink);
-}
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  section.meet .meet-sec {
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+
+  .meet-sec .image img {
+    width: 433px;
+    height: 493px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
 }
 
 /*for-landscape_mobile view-576*/
@@ -601,9 +637,9 @@
   .logo-navbar .icons i:last-child {
     display: inline-block;
   }
-  
 
-.slider-customer .content-info p {
+
+  .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
     font-size: 23px;
@@ -611,12 +647,14 @@
     font-weight: 400;
     width: 70%;
     margin: 0px auto;
-}
-.slider-customer .info P {
+  }
+
+  .slider-customer .info P {
     font-size: 20px;
     color: rgb(36, 24, 46);
     font-weight: 800;
-}
+  }
+
 }
 
 
@@ -638,6 +676,10 @@
     display: inline-block;
   }
 
+  .service .image img {
+    height: 292px;
+    object-fit: cover;
+  }
 
   .banner {
     height: 453px;
@@ -697,6 +739,12 @@
   .slider {
     padding: 0 15px;
   }
+  
+
+.slick-slide img {
+    display: block;
+    width: 109px;
+}
 
   .slider-customer {
     padding: 25px 15px;
@@ -752,7 +800,7 @@
   }
 
   .newsletter-form button {
-    padding: 15px;
+    padding: 21px;
   }
 
   /* Scroll top */
@@ -905,8 +953,9 @@
   .icon-content {
     display: flex;
     align-items: center;
-    gap: 20px;
-    width: 100%;
+    justify-content: center;
+    gap: 1px;
+    width: 44%;
   }
 
   .portfolio-sec .images-box .image {
@@ -917,16 +966,7 @@
   }
 
   .plan-price .price-card {
-    background-color: var(--color-white);
-    padding: 43px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    flex: 1;
-    min-width: 300px;
-    max-width: 392px;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
+    max-width: 390px;
   }
 
   section.plan-price {
@@ -936,6 +976,7 @@
 
   .nno-card {
     width: 100%;
+    padding: 0 13px;
   }
 
   .footer-image img {
@@ -944,9 +985,9 @@
     object-fit: cover;
     margin-bottom: 0;
   }
-  
 
-.slider-customer .content-info p {
+
+  .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
     font-size: 23px;
@@ -954,12 +995,45 @@
     font-weight: 400;
     width: 70%;
     margin: 0px auto;
-}
-.slider-customer .info P{
+  }
+
+  .slider-customer .info P {
     font-size: 13px;
     font-weight: 600;
     color: var(--color-pink);
-}
+  }
+
+  .content-service-1 .service-content p {
+    font-size: 14px;
+  }
+
+  .service-2 .image img {
+    height: 292px;
+    object-fit: cover;
+  }
+
+  .content-service-2 p {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 97%;
+  }
+
+  .blog-sec {
+    flex-wrap: wrap;
+  }
+
+  .meet-sec .image img {
+    width: 390px;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  .newsletter-form button i{
+    font-size: 18px;
+  }
+
 }
 
 
@@ -986,7 +1060,7 @@
   }
 
 
-.slider-customer .content-info p {
+  .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
     font-size: 23px;
@@ -994,11 +1068,12 @@
     font-weight: 400;
     width: 70%;
     margin: 0px auto;
-}
-.slider-customer .info P {
+  }
+
+  .slider-customer .info P {
     font-size: 20px;
     color: rgb(36, 24, 46);
     font-weight: 800;
-}
+  }
 
 }

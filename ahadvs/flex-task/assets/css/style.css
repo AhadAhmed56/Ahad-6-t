@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Science+Gothic:wght@100..900&display=swap"); @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"); :root {
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&family=Science+Gothic:wght@100..900&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap"); 
+
+ * {
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+ }
+:root {
     --color-white: #fff;
     --color-dark: #24182e;
     --color-pink: #e60070;
@@ -10,11 +18,6 @@
     --font-para: "Roboto Slab", serif;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-}
 
 body {
     font-family: var(--font-para);
@@ -55,11 +58,29 @@ section.plan-price .content {
 section.plan-price .card {
     padding: 62px 0;
 }
+.content {
+    text-align: center;
+}
+.content h3 {
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--color-dark);
+    font-family: var(--font-main);
+}
 
 .content h5 {
-    font-size: 30px;
+    font-size: 40px;
     font-style: italic;
+    font-weight: 400;
     color: var(--color-pink);
+    font-family: var(--font-main);
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #434343;
+    font-family: var(--font-para);
     font-weight: 400;
 }
 .web-inf0 h4 {
@@ -68,10 +89,6 @@ section.plan-price .card {
 
 .web-inf0 p {
     font-size: 12px;
-}
-.content h3 {
-    font-size: 40px;
-    /* padding: 11px; */
 }
 
 .Skill-Expect .content .underline {
@@ -171,6 +188,9 @@ header {
     transition: color 0.3s;
 }
 
+.navbar nav ul i {
+    color: white;
+}
 .navbar nav ul li a:hover {
     color: var(--color-pink);
 }
@@ -204,7 +224,7 @@ header {
     z-index: 1;
 }
 
-.banner > * {
+.banner .content {
     position: relative;
     z-index: 2;
 }
@@ -288,7 +308,7 @@ section.Skills {
 }
 
 .Skill-Expect .content h5 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: var(--font-main);
     color: var(--color-pink);
     font-weight: 100;
@@ -296,7 +316,7 @@ section.Skills {
 }
 
 .Skill-Expect .content h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
 }
 
@@ -309,7 +329,7 @@ section.Skills {
 .Skill-Expect .content p {
     line-height: 1.7;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(67, 67, 67);
     text-align: justify;
     font-weight: 400;
@@ -327,7 +347,7 @@ section.Skills {
 }
 
 .content-service-1 .service-content h5 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: var(--font-main);
     color: var(--color-pink);
     font-weight: 100;
@@ -335,7 +355,7 @@ section.Skills {
 }
 
 .content-service-1 .service-content h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     color: var(--color-white);
 }
@@ -350,7 +370,7 @@ section.Skills {
 .content-service-1 .service-content p {
     line-height: 1.9;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(234, 234, 234);
     text-align: justify;
     margin-bottom: 30px;
@@ -406,12 +426,12 @@ section.service .row {
 
 .content-service-2 {
     background-color: var(--color-sky);
-    height: 523px;
+    height: 68.8vh;
     padding: 100px 48px;
 }
 
 .content-service-2 h5 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: var(--font-main);
     color: var(--color-pink);
     font-weight: 100;
@@ -419,7 +439,7 @@ section.service .row {
 }
 
 .content-service-2 h3 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
 }
 
@@ -433,7 +453,7 @@ section.service .row {
 .content-service-2 p {
     line-height: 1.9;
     margin-top: 15px;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(67, 67, 67);
     text-align: justify;
     margin-bottom: 30px;
@@ -505,19 +525,11 @@ section.portfolio {
 }
 
 .portfolio-sec .content {
-    text-align: center;
     padding-top: 101px;
     padding-bottom: 40px;
 }
 
-.portfolio-sec .content h3 {
-    font-size: 50px;
-}
 
-.portfolio-sec .content h5 {
-    font-size: 30px;
-    color: var(--color-pink);
-}
 
 .portfolio-sec .content .underline {
     background-color: var(--color-pink);
@@ -539,7 +551,7 @@ section.portfolio {
 }
 
 .portfolio-sec .images-box img {
-    width: 381px;
+    width: 476px;
     height: auto;
     display: block;
     transition: transform 0.4s, filter 0.4s;
@@ -648,8 +660,8 @@ section.customer .content .underline {
 }
 
 .slider-customer .image img {
-    width: 75px;
-    height: 75px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0px auto;
@@ -664,7 +676,7 @@ section.customer .content .underline {
 .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
-    font-size: 23px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 400;
     width: 70%;
@@ -682,7 +694,7 @@ section.customer .content .underline {
 }
 
 .slider-customer .info p {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--color-pink);
     font-weight: 400;
 }
@@ -776,7 +788,6 @@ section.meet .image:hover .overlay-text {
 
 section.meet .content h3 {
     color: white;
-    font-size: 50px;
 }
 
 section.meet .overlay-text h5 {
@@ -833,7 +844,7 @@ section.meet .overlay-text ul li a:hover {
     z-index: 1;
 }
 
-.bg-image > * {
+.bg-image .content {
     position: relative;
     z-index: 2;
 }
@@ -931,7 +942,7 @@ section.plan-price {
     border-bottom: 1px solid rgb(238, 238, 238);
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .price-card ul li:last-child {
@@ -1006,18 +1017,8 @@ section.tips .content {
     margin-bottom: 30px;
 }
 
-.tips .content h5 {
-    color: var(--color-pink);
-    font-size: 40px;
-    font-style: italic;
-    font-weight: 400;
-}
 
-.tips .content h3 {
-    font-size: 50px;
-    font-weight: 900;
-    margin-bottom: 20px;
-}
+.tips .content h3 {padding-bottom: 20px;}
 
 .tips .content .underline {
     margin: 0px auto;
@@ -1068,7 +1069,7 @@ section.tips .content {
 
 .card-tips p {
     margin: 21px 0px;
-    font-size: 15px;
+    font-size: 16px;
     color: #434343;
     font-family: var(--font-main);
     font-weight: 400;
@@ -1133,8 +1134,6 @@ form {
 }
 
 .form-sec .content h3 {
-    font-size: 40px;
-    font-weight: 900;
     color: var(--color-white);
     padding: 0px 0px 8px;
 }
@@ -1225,8 +1224,6 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
     flex-wrap: wrap;
     padding-bottom: 60px;
 }
@@ -1278,7 +1275,7 @@ footer {
 
 .newsletter-form input {
     width: 100%;
-    padding: 15px;
+    padding: 22px;
     border: none;
     background-color: var(--color-white);
     color: rgb(51, 51, 51);
@@ -1417,8 +1414,6 @@ footer {
     margin-top: -7px;
 }
 
-.resp-logo {
-}
 
 .resp-cross {
     position: absolute;

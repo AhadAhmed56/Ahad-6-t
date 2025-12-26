@@ -758,81 +758,81 @@
 
 
   <!-- Slider Init -->
-  <script>
-    $(".slider").slick({
-      dots: true,
-      infinite: true,
-      speed: 300,
-      autoplay: true,
-      arrows: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
+    <script>
+      $(".slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            },
           },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
           },
-        },
-      ],
-    });
-
-    $('.donor-slide').slick({
-      dots: false,
-      infinite: true,
-      speed: 200,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: true,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
-
-
-    jQuery(document).ready(function ($) {
-      $(".open-resp-menu").click(function () {
-        $(".responsive-menu").addClass("active");
+        ],
       });
 
-      $(".resp-cross a").click(function () {
-        $(".responsive-menu").removeClass("active");
+      $('.donor-slide').slick({
+        dots: false,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       });
-    });
 
 
-  </script>
+      jQuery(document).ready(function ($) {
+        $(".open-resp-menu").click(function () {
+          $(".responsive-menu").addClass("active");
+        });
+
+        $(".resp-cross a").click(function () {
+          $(".responsive-menu").removeClass("active");
+        });
+      });
+
+
+    </script>
 
 
 </body>

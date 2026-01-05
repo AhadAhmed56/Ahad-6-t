@@ -1,6 +1,5 @@
 /*for-large-dekstop view-1200*/
 @media only screen and (min-width: 100px) and (max-width: 1399px) {
-
   .container {
     width: 1091px;
   }
@@ -12,11 +11,18 @@
   .banner .content h3 {
     font-size: 56px;
   }
-
+  .bg-image .content {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+  }
   /* Skills */
 
-  .Skill-Expect {}
-
+  .content-service-1 {
+    background-color: var(--color-dark);
+    height: 550px;
+    padding: 8px 64px;
+  }
 
   .Skill-Expect .image img {
     width: 582px;
@@ -54,11 +60,13 @@
   }
 
   .service-2 .image img {
-    height: 72vh;
+    height: 595px;
+    object-fit: cover;
   }
 
   .service .image img {
-    height: 72vh;
+    height: 550px;
+    object-fit: cover;
   }
 
   .portfolio-sec .images-box img {
@@ -70,8 +78,8 @@
 
   .content-service-2 {
     background-color: var(--color-sky);
-    height: 72vh;
-    padding: 100px 64px;
+    height: 589px;
+    padding: 43px 64px;
   }
 
   /* Form */
@@ -113,7 +121,7 @@
 
   .bg-image .content h3 {
     color: var(--color-white);
-    font-size: 69px;
+    font-size: 56px;
   }
 
   .form-sec form input {
@@ -133,7 +141,6 @@
     align-items: center;
     gap: 20px;
   }
-
 
   .slider-customer .content-info p {
     color: rgb(37, 35, 35);
@@ -170,7 +177,6 @@
     font-size: 56px;
   }
 
-
   .Skill-Expect .image img {
     width: 582px;
   }
@@ -184,7 +190,9 @@
     font-weight: 100;
     font-style: italic;
   }
-
+  .bg-image {
+    padding: 122px 0px;
+  }
   .Skill-Expect .content h3 {
     font-size: 35px;
     padding: 0px;
@@ -198,40 +206,44 @@
     text-align: justify;
   }
 
-  section.service .row {
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-  }
-
   .service .image img {
-    height: 72vh;
+    height: 550px;
+    object-fit: cover;
   }
 
-  section.service-2 .row {
-    flex-direction: column;
+  .content-service-2 {
+    background-color: var(--color-sky);
+    height: 548px;
+    padding: 87px 64px;
   }
-
+  .content-service-2 p {
+    font-size: 14px;
+  }
+  .content-service-2 h5 {
+    font-size: 20px;
+  }
+  .content-service-2 h3 {
+    font-size: 30px;
+  }
   section.service .row .col-lg-6 {
-    width: 100%;
+    width: 50%;
   }
 
   section.service-2 .row .col-lg-6 {
-    width: 100%;
+    width: 50%;
   }
 
   .portfolio-sec .images-box img {
-    width: 256px;
+    width: 252px;
     height: auto;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
   }
 
-
-
-.slick-slide img {
+  .slick-slide img {
     display: block;
     width: 178px;
-}
+  }
 
   .form-sec,
   .from-image-sec .image {
@@ -249,7 +261,11 @@
   .nno-card {
     width: 21%;
   }
-
+  .content-service-1 {
+    background-color: var(--color-dark);
+    height: 550px;
+    padding: 46px 64px;
+  }
   .plan-price .price-card {
     max-width: 480px;
   }
@@ -260,7 +276,9 @@
     object-fit: cover;
     margin-bottom: 0;
   }
-
+  .content-service-1 .service-content p {
+    font-size: 14px;
+  }
   .footer-image {
     gap: 9px;
   }
@@ -270,7 +288,18 @@
     width: 100%;
     object-fit: cover;
   }
+  .content-service-1 .service-content h3 {
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--color-white);
+  }
+  .content-service-1 .service-content h5 {
+    font-weight: 900;
 
+    color: var(--color-pink);
+
+    font-size: 20px;
+  }
 
   .bg-image .content h3 {
     color: var(--color-white);
@@ -303,16 +332,18 @@
     color: rgb(36, 24, 46);
     font-weight: 800;
   }
+  .service-2 .image img {
+    height: 550px;
+    object-fit: cover;
+  }
 
   .blog-sec {
     gap: 38px;
   }
-
 }
 
 /*for-tablet view-768*/
 @media only screen and (min-width: 100px) and (max-width: 991px) {
-
   .container {
     width: 90%;
   }
@@ -393,12 +424,11 @@
     height: auto;
     padding: 60px 52px;
   }
-  
 
-.slick-slide img {
+  .slick-slide img {
     display: block;
     width: 162px;
-}
+  }
 
   .content-service-1 .service-content {
     margin-left: 0;
@@ -418,7 +448,6 @@
   .blog-sec {
     flex-wrap: wrap;
   }
-
 
   .card {
     flex-wrap: wrap;
@@ -480,7 +509,6 @@
 
   .content h3 {
     font-size: 40px;
-
   }
 
   .portfolio-sec .images-box img {
@@ -502,16 +530,13 @@
   }
 
   .bg-image {
-
     padding: 122px;
-
   }
 
   .bg-image .content h3 {
     color: var(--color-white);
     font-size: 37px;
   }
-
 
   .web-inf0 h4 {
     font-size: 32px;
@@ -560,7 +585,6 @@
   }
 
   .nno-card {
-
     width: 42%;
   }
 
@@ -581,7 +605,6 @@
     width: 47%;
   }
 
- 
   .logo-navbar .navbar {
     display: none;
   }
@@ -604,7 +627,7 @@
     font-size: 15px;
     color: rgb(36, 24, 46);
     font-weight: 600;
-    COLOR: var(--color-pink);
+    color: var(--color-pink);
   }
 
   .container {
@@ -638,7 +661,6 @@
     display: inline-block;
   }
 
-
   .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
@@ -654,16 +676,11 @@
     color: rgb(36, 24, 46);
     font-weight: 800;
   }
-
 }
-
-
 
 /*for-mobile view-375*/
 
 @media only screen and (min-width: 100px) and (max-width: 575px) {
-
-
   header {
     padding: 1rem;
   }
@@ -725,7 +742,6 @@
     padding-top: 59px;
   }
 
-
   section.Skills {
     padding: 75px 17px;
   }
@@ -739,12 +755,11 @@
   .slider {
     padding: 0 15px;
   }
-  
 
-.slick-slide img {
+  .slick-slide img {
     display: block;
     width: 109px;
-}
+  }
 
   .slider-customer {
     padding: 25px 15px;
@@ -759,7 +774,6 @@
     width: 60px;
     height: 60px;
   }
-
 
   .card {
     gap: 30px;
@@ -828,7 +842,6 @@
   }
 
   .Skill-Expect .content h5 {
-
     font-size: 16px;
   }
 
@@ -925,11 +938,11 @@
   }
 
   section.tips .content h3 {
-    FONT-SIZE: 24PX;
+    font-size: 24px;
   }
 
   section.tips .content h5 {
-    FONT-SIZE: 15PX;
+    font-size: 15px;
   }
 
   .form-sec .content {
@@ -986,7 +999,6 @@
     margin-bottom: 0;
   }
 
-
   .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
@@ -1030,17 +1042,13 @@
     object-fit: cover;
     transition: transform 0.4s ease;
   }
-  .newsletter-form button i{
+  .newsletter-form button i {
     font-size: 18px;
   }
-
 }
-
-
 
 /*for-small_mobile view-320*/
 @media only screen and (min-width: 100px) and (max-width: 374px) {
-
   section.banner .content {
     padding-top: 32px;
   }
@@ -1059,7 +1067,6 @@
     font-size: 32px;
   }
 
-
   .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
@@ -1075,5 +1082,4 @@
     color: rgb(36, 24, 46);
     font-weight: 800;
   }
-
 }

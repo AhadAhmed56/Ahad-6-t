@@ -70,7 +70,7 @@
   }
 
   .portfolio-sec .images-box img {
-    width: 349px;
+    width: 300px;
     height: auto;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
@@ -383,6 +383,30 @@
     top: 95px;
     right: 2px;
   }
+  section.meet .image .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 52.8%;
+    height: 77%;
+    width: 70%;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    transition: 0.4s;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: rgb(249, 249, 249);
+    border-radius: 3px;
+}
+
+section.meet {
+    background-color: var(--color-dark);
+    padding: 110px 0px;
+}
 
   .img-right-img img {
     width: 107px;
@@ -512,7 +536,7 @@
   }
 
   .portfolio-sec .images-box img {
-    width: 375px;
+    width: 384px;
     height: auto;
     display: block;
     transition: transform 0.4s ease, filter 0.4s ease;
@@ -526,7 +550,7 @@
   }
 
   section.meet .image {
-    padding: 10px;
+    padding: 30px;
   }
 
   .bg-image {
@@ -640,8 +664,8 @@
   }
 
   .meet-sec .image img {
-    width: 433px;
-    height: 493px;
+    width: 300px;
+    height: 400px;
     object-fit: cover;
     transition: transform 0.4s ease;
   }
@@ -929,7 +953,7 @@
 
   .bg-image .content h3 {
     color: var(--color-white);
-    font-size: 28px;
+    font-size: 21px;
     line-height: 1.4;
   }
 
@@ -993,8 +1017,8 @@
   }
 
   .footer-image img {
-    width: 119px;
-    height: 119px;
+    width: 95px;
+    height: 95px;
     object-fit: cover;
     margin-bottom: 0;
   }
@@ -1002,7 +1026,7 @@
   .slider-customer .content-info p {
     color: rgb(37, 35, 35);
     line-height: 1.6;
-    font-size: 23px;
+    font-size: 13px;
     font-style: italic;
     font-weight: 400;
     width: 70%;
@@ -1037,7 +1061,6 @@
   }
 
   .meet-sec .image img {
-    width: 390px;
     height: auto;
     object-fit: cover;
     transition: transform 0.4s ease;

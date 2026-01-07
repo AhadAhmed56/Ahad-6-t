@@ -337,12 +337,12 @@ section.Skills {
 
 .content-service-1 {
     background-color: var(--color-dark);
-    height: 72vh;
+    height: 681px;
     padding: 80px 64px;
 }
 
 .content-service-1 .service-content {
-    margin-left: 150px;
+    margin-left: 0px;
     padding-top: 40px;
 }
 
@@ -426,8 +426,8 @@ section.service .row {
 
 .content-service-2 {
     background-color: var(--color-sky);
-    height: 68.8vh;
-    padding: 100px 48px;
+    height: 654px;
+    padding: 100px 61px;
 }
 
 .content-service-2 h5 {
@@ -677,7 +677,7 @@ section.customer .content .underline {
     color: rgb(37, 35, 35);
     line-height: 1.6;
     font-size: 25px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 400;
     width: 70%;
     margin: 0px auto;
@@ -1243,6 +1243,7 @@ footer {
     font-size: 15px;
     margin-bottom: 20px;
     font-weight: 800;
+    font-family: var(--font-main);
 }
 
 .nno-card h4 a {
@@ -1310,6 +1311,7 @@ footer {
     font-size: 15px;
     transition: color 0.3s;
     font-weight: 900;
+    font-family: var(--font-main);
 }
 
 .nno-card ul li a:hover {

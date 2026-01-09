@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-lg-4{
+    width: 33.33%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.card-item {
+    position: relative;
+    margin: 0px 10px;
+    overflow: hidden;
+}
+.card-item-content {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #0000008f;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    transition: all .5s;
+}
+.card-item:hover .card-item-content{
+    left: 0;
+}
+.card-item-content h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.card-item-content p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.card-item-content a {
+    text-decoration: none;
+    background-color: white;
+    padding: 14px 25px;
+    color: black;
+    border-radius: 5px;
+    transition: all .5s;
+    display: inline-block;
+}
+.card-item-content a:hover {
+    background-color: black;
+    color: white;
+}
+/* .card-item-img img {
+    height: 400px;
+    object-position: top;
+    object-fit: cover;
+    transition: all 4s;
+}
+
+.card-item :hover img {
+    object-position: bottom;
+} */
+
+</style>
+
+
+<body>
+
+
+<section class="cards">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card-item">
+                    <div class="card-item-img">
+                        <img src="team-one.jpg" alt="Image">
+                    </div>
+                    <div class="card-item-content">
+                        <h3>Hello World!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non doloremque labore mollitia tempore exercitationem, earum maiores hic eum voluptatibus debitis.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-item">
+                    <div class="card-item-img">
+                        <img src="team-one.jpg" alt="Image">
+                    </div>
+                    <div class="card-item-content">
+                        <h3>Hello World!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non doloremque labore mollitia tempore exercitationem, earum maiores hic eum voluptatibus debitis.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card-item">
+                    <div class="card-item-img">
+                        <img src="team-one.jpg" alt="Image">
+                    </div>
+                    <div class="card-item-content">
+                        <h3>Hello World!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non doloremque labore mollitia tempore exercitationem, earum maiores hic eum voluptatibus debitis.</p>
+                        <a href="#">Learn More</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+</body>
+</html>

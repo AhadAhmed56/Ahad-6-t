@@ -4,6 +4,9 @@
   .container {
     width: 1091px;
   }
+.banner{
+  height: 800px;
+}
 
   .content h3 {
     font-size: 40px;
@@ -209,7 +212,7 @@
   }
 
   .form-sec {
-    padding: 144px 74px;
+    padding: 38px 74px;
   }
 
   .form-sec .content h3 {
@@ -686,7 +689,7 @@
   /* Meet */
   section.meet {
     background-color: var(--color-dark);
-    padding: 110px 0px;
+    padding: 63px 0px 12px;
   }
 
   section.meet .meet-sec {
@@ -738,6 +741,10 @@
   }
 
   /* Plan & Price */
+  section.plan-price {
+    background-color: var(--color-sky);
+    padding: 58px 0px  26px;
+}
   .plan-price .price-card {
     background-color: var(--color-white);
     padding: 43px;
@@ -764,6 +771,11 @@
   }
 
   /* Tips */
+  section.tips {
+    padding: 18px 0px;
+}
+
+
   .tips .content h3 {
     font-size: 30px;
   }
@@ -1115,7 +1127,7 @@
   /* Blog */
   .blog {
     background-color: var(--color-dark);
-    padding: 142px 2px;
+    padding: 63px 2px;
   }
 
   .blog-sec {
@@ -1138,7 +1150,10 @@
   .portfolio-sec .content h3 {
     font-size: 24px;
   }
-
+.portfolio-sec .content {
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
   .portfolio-sec .content h5 {
     font-size: 15px;
     color: var(--color-pink);
@@ -1166,7 +1181,10 @@
   .slider {
     padding: 0 15px;
   }
-
+section.customer {
+    background-color: var(--color-sky);
+    padding: 51px 0px;
+}
   .slider-customer {
     padding: 25px 15px;
   }
@@ -1202,7 +1220,10 @@
   section.meet .content h3 {
     font-size: 24px;
   }
-
+    section.meet {
+        background-color: var(--color-dark);
+        padding: 50px 0px  26px;
+    }
   section.meet .content h5 {
     font-size: 15px;
   }
@@ -1226,7 +1247,7 @@
   }
 
   .bg-image .content {
-    padding: 80px 0px;
+    padding: 20px 0px;
   }
 
   .bg-image .content h3 {
@@ -1383,6 +1404,14 @@
     font-size: 11px;
     font-family: var(--font-main);
   }
+  .form-sec form a {
+    background: var(--color-pink);
+    padding: 13px 16px;
+    color: var(--color-white);
+    margin: 23px 0px;
+    font-size: 12px;
+    border-radius: 5px;
+}
 }
 
 /*for-small_mobile view-320*/

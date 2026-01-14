@@ -187,6 +187,13 @@
   }
 
   /* Plan & Price */
+  .p-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 40px;
+}
   .plan-price .price-card {
     max-width: 480px;
   }
@@ -289,7 +296,7 @@
     font-family: var(--font-main);
   }
 
-  /* Banner */
+  /* Banner */ 
   .banner .content h1 {
     font-size: 60px;
   }
@@ -436,7 +443,7 @@
 
   /* Plan & Price */
   .plan-price .price-card {
-    max-width: 480px;
+    max-width: 352px;
   }
 
   .price-card ul li {
@@ -445,6 +452,9 @@
   }
 
   /* Tips */
+  .tipscard .card-tips{
+    width: 33.33%;
+  }
   .card-tips h3 {
     font-size: 20px;
     font-weight: 900;
@@ -467,9 +477,9 @@
   }
 
   .from-image-sec .image img {
-    width: 513px;
+    width: 713px;
     object-fit: cover;
-    height: 796px;
+    height: 679px;
   }
 
   .form-sec {
@@ -774,7 +784,12 @@
   section.tips {
     padding: 18px 0px;
 }
-
+.tipscard{
+  flex-wrap: wrap;
+} 
+.tipscard .card-tips{
+    width: 46.33%;
+  }
 
   .tips .content h3 {
     font-size: 30px;
@@ -810,6 +825,7 @@
   .from-image-sec .image img {
     width: 776px;
     object-fit: cover;
+    height: 427px;
   }
 
   .form-sec {

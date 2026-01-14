@@ -57,9 +57,6 @@ section.plan-price .content {
     text-align: center;
 }
 
-section.plan-price .card {
-}
-
 .content {
     text-align: center;
 }
@@ -342,7 +339,7 @@ section.Skills {
 
 .content-service-1 {
     background-color: var(--color-dark);
-    height: 690px;
+    height: 681px;
     padding: 80px 64px;
 }
 
@@ -396,9 +393,7 @@ section.service-2 .row .col-lg-6 {
     width: 50%;
 }
 
-section.service .row .col-lg-6 {
-    /* width: 50%; */
-}
+
 
 section.service .row {
     display: flex;
@@ -431,7 +426,7 @@ section.service .row {
 
 .content-service-2 {
     background-color: var(--color-sky);
-    height: 659px;
+    height: 654px;
     padding: 100px 61px;
 }
 
@@ -737,6 +732,7 @@ section.meet {
 
 section.plan-price .content {
     text-align: center;
+    margin-bottom: 46px;
 }
 
 section.plan-price .content .underline {
@@ -864,7 +860,7 @@ section.plan-price {
     padding: 120px 0px;
 }
 
-.card {
+.tipscard, .p-card {
     display: flex;
     justify-content: center;
     align-items: center;

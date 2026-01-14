@@ -2,183 +2,199 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <title>Document</title>
-    <style>
-        * {
-            font-family: "Roboto", sans-serif;
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        section .content {
-            text-align: center;
-        }
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-        .content h4 {
-            font-size: 38px;
-        }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-        section {
-            padding: 70px 0;
-        }
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        .content ul {
-            DISPLAY: FLEX;
-            JUSTIFY-CONTENT: CENTER;
-            ALIGN-ITEMS: CENTER;
-            GAP: 45PX;
-        }
+  <title>Bootstrap Product Card</title>
 
-        .content ul LI {
-            LIST-STYLE: NONE;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+    }
 
-        .content ul LI a {
-            color: gray;
-            text-decoration: none;
-            font-size: 18px;
-        }
+    section {
+      padding: 70px 0;
+    }
 
-        .content ul LI a:hover {
-            color: black
-        }
+    /* Heading */
+    .content {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-        .content-card {
-            text-align: center;
-            padding: 20px 0px;
-        }
+    .content h4 {
+      font-size: 38px;
+    }
 
-        .content-card .stars i {
-            color: #e8b825;
-            font-size: 12px;
-        }
+    .content ul {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 0;
+    }
 
-        .content-card .stars {
-            padding: 0px 0px 6px 0px;
-        }
+    .content ul li {
+      list-style: none;
+    }
 
-        .price-card {
-            padding: 10px 0px;
-            color: black;
-        }
+    .content ul li a {
+      text-decoration: none;
+      color: gray;
+      font-size: 18px;
+    }
 
-        .price-card span {
-            color: gray;
-        }
+    .content ul li a:hover {
+      color: black;
+    }
 
-        button {
-            padding: 14px 25px;
-            border-radius: 30px;
-            background-color: black;
-            color: white;
-        }
+     
+    .product-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #eee;
+    }
 
-        .position-absolute.top-0.left-0 {
-            background-color: black;
-            color: white;
-            padding: 1px 12px;
-            margin: 10px;
-        }
+    .product-card img {
+      width: 100%;
+      display: block;
+    }
 
-        .position-absolute.top-0.left-0 h6 {
-            font-size: 15px;
-        }
+    .badge-sale {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: black;
+      color: white;
+      padding: 2px 12px;
+      font-size: 14px;
+    }
 
-        .overlap-content {
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            transition: all .3s;
-            opacity: 0;
-            display: flex;
-            justify-content: end;
-            /* flex-direction: column; */
-            /* align-items: center; */
-            padding: 10px;
-        }
+    .content-card {
+      text-align: center;
+      padding: 20px;
+    }
 
-        .prodcut-card:hover .overlap-content {
-            left: 0;
-            opacity: 1;
-        }
-    </style>
+    .stars i {
+      color: #e8b825;
+      font-size: 12px;
+    }
+
+    .price-card {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .price-card span {
+      color: gray;
+    }
+
+    /* Overlay */
+    .overlay-content {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+      transition: 0.4s ease;
+    }
+
+    .overlay-content .icon {
+      background: white;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items:end ;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .product-card:hover .overlay-content {
+      left: 0;
+    }
+  </style>
 </head>
 
 <body>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="content">
-                        <h4>Our Product</h4>
-                        <ul>
-                            <li> <a href="#"> Foundation </a></li>
-                            <li><a href="#"> Concealer </a></li>
-                            <li> <a href="#">Serum </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="prodcut-card position-relative">
-                        <div class="image">
-                            <img src="/bootstrap\image\cosmika-image.jpg" alt="">
-                        </div>
-                        <div class="position-absolute top-0 left-0">
-                            <h6>-17%</h6>
-                        </div>
-                        <div class="content-card">
-                            <p>Laneige Lip Sleeping Mask Nuit Pure 20g</p>
-                            <div class="stars">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="price-card">
-                                <span>
-                                    <del>$200</del>
-                                </span>
-                                $150
-                            </div>
-                            <button type="submit">Add to price-card</button>
-                        </div>
-                        <div class="overlap-content ">
+  <section>
+    <div class="container">
 
-                            <div class="icons"> <i class="fa-regular fa-heart"></i></div>
-                            <div class="icons"> <i class="fa-regular fa-heart"></i></div>
-                            <div class="icons"> <i class="fa-regular fa-heart"></i></div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-3"></div>
-            </div>
+      <!-- Heading -->
+      <div class="row">
+        <div class="col-12">
+          <div class="content">
+            <h4>Our Product</h4>
+            <ul>
+              <li><a href="#">Foundation</a></li>
+              <li><a href="#">Concealer</a></li>
+              <li><a href="#">Serum</a></li>
+            </ul>
+          </div>
         </div>
-    </section>
-</body>
+      </div>
 
+      <!-- Product Grid -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="product-card">
+
+            <img src="image/cosmika-image.jpg" class="img-fluid" alt="">
+
+            <div class="badge-sale">-17%</div>
+
+            <div class="content-card">
+              <p>Laneige Lip Sleeping Mask Nuit Pure 20g</p>
+
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="price-card">
+                <span><del>$200</del></span> $150
+              </div>
+
+              <button class="btn btn-dark rounded-pill">
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Overlay -->
+            <div class="overlay-content">
+              <div class="icon"><i class="fa-regular fa-heart"></i></div>
+              <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <div class="icon"><i class="fa-regular fa-eye"></i></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
 </html>

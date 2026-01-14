@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Bootstrap2</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        color: white;
+    }
+
+    .boot{
+        background-color: #0c0e2b;
+        padding: 150px 0px ;
+        height: 100vh;
+    }
+    .images-content {
+    position: relative;
+}
+
+.images .image2 {
+    position: absolute;
+    left: -42px;
+    bottom: -261px;
+}
+
+.images .image3 {
+    position: absolute;
+    top: 6px;
+    left: 28px;
+}
+
+.images .image4 {
+    position: absolute;
+    bottom: -373px;
+    right: 137px;
+}
+
+.images .image3 {
+    position: absolute;
+    top: 23px;
+    left: 30px;
+}
+.images-content .content {
+    position: absolute;
+    bottom: -355px;
+    left: -54px;
+    background-color: #0c0e2b;
+    display: flex;
+    gap: 20px;
+    padding: 17px;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px solid #5f2ded;
+}
+
+.images-content .content h5 {
+    font-size: 40px;
+    color: #5f2ded;
+}
+
+.images-content .content p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.left-content h5 {
+    background-color: #e7deff;
+    width: max-content;
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 17px;
+    color: #5f2ded;
+}
+
+.left-content h2 {
+    margin: 25px 0px;
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+.left-content p {
+    border-left: 3px solid #5f2ded;
+    padding: 0px 13px;
+    line-height: 1.8;
+}
+.left-content ul li {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin: 13px 0px;
+}
+
+.left-content ul {
+    margin: 39px 0px;
+    padding: 0;
+}
+
+.left-content ul li i {
+    background-color: #0c0e2b;
+    margin: 2px 0;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 9px;
+    transition: all .3s;
+}
+.left-content ul li i:hover{
+    background-color:#1e0761 ;
+}
+.left-content ul li h4 {
+    font-size: 19px;
+    margin: 0px;
+    padding: 0px;
+}
+.image-content-1 {
+    display: flex;
+    gap: 26px;
+    margin: 29px -68px;
+    align-items: center;
+}
+
+.image-content-1 .content h5 {
+    font-size: 40px;
+    color: #e7deff;
+    padding: 0;
+    margin: 0;
+}
+
+.image-content-1 .content p {
+    font-size: 19px;
+    font-weight: 400;
+}
+</style>
+
+<body>
+<section class="boot">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="images-content">
+                   <div class="images">
+                     <div class="image1">
+                        <img src="/bootstrap/image/about_4.png" alt="">
+                     </div>
+                    <div class="image2">
+                        <img src="/bootstrap//image/about_11.png" alt="">
+                    </div>
+                    <div class="image3">
+                        <img src="/bootstrap/image/about_2.png" alt="">
+                    </div>
+                    <div class="image4">
+                        <img src="/bootstrap/image/about_3.png" alt="">
+                    </div>
+                   </div>
+                   <div class="content">
+                    <h5>25+</h5>
+                    <p>YEARS EXPERINECE <br> JUST  ACHIVED</p>
+                                   
+                   </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="left-content">
+                    <h5>About US</h5>
+                    <h2>Welcome to the Online Learning Center</h2>
+                    <p>25+contray to popular belief,Lorem ipsum dolor sit amet, Velit illo labore, accusamus nam voluptatum perspiciatis fugiat. </p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check"></i> 
+                        <h4>    Lorem ipsum dolor sit amet .</h4>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> 
+                        <h4>    Lorem ipsum dolor sit amet .</h4>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i> 
+                        <h4>    Lorem ipsum dolor sit amet .</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="image-content-1">
+                    <div class="image">
+                        <img src="/bootstrap/image/counter__1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>6+</h5>
+                        <p>Total Acheivment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="image-content-1">
+                    <div class="image">
+                        <img src="/bootstrap/image/counter__1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>6+</h5>
+                        <p>Total Acheivment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="image-content-1">
+                    <div class="image">
+                        <img src="/bootstrap/image/counter__1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>6+</h5>
+                        <p>Total Acheivment</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="image-content-1">
+                    <div class="image">
+                        <img src="/bootstrap/image/counter__1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h5>6+</h5>
+                        <p>Total Acheivment</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>

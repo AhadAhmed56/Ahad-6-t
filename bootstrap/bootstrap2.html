@@ -8,9 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Bootstrap2</title>
 </head>
 <style>
@@ -19,233 +22,346 @@
         margin: 0px;
         box-sizing: border-box;
         font-family: "Roboto", sans-serif;
+    }
+
+    .boot {
+        background-color: #0c0e2b;
+        padding: 150px 0px;
+        height: auto;
+    }
+
+    .images-content {
+        position: relative;
+        margin: 0px 100px;
+    }
+
+    .images .image2 {
+        position: absolute;
+        left: -42px;
+        bottom: -394px;
+    }
+
+    .images .image3 {
+        position: absolute;
+        top: 6px;
+        left: 28px;
+    }
+
+    .images .image4 {
+        position: absolute;
+        bottom: -491px;
+        right: -75px;
+    }
+
+    .images .image1 {
+        position: absolute;
+        top: -23px;
+        left: -2px;
+    }
+
+    .images-content .content {
+        position: absolute;
+        bottom: -474px;
+        left: -54px;
+        background-color: #0c0e2b;
+        display: flex;
+        gap: 20px;
+        padding: 17px;
+        justify-content: center;
+        align-items: center;
+        border-left: 4px solid #5f2ded;
+    }
+
+    .images-content .content h5 {
+        font-size: 40px;
+        color: #5f2ded;
+    }
+
+    .images-content .content p {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .left-content h5 {
+        background-color: #e7deff;
+        width: max-content;
+        padding: 5px 25px;
+        border-radius: 25px;
+        font-size: 17px;
+        color: #5f2ded;
+    }
+    .left-content p {
+        border-left: 3px solid #5f2ded;
+        padding: 0px 13px;
+        line-height: 1.8;
+        margin: 20px 0px;
+    }
+
+    .left-content ul li {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        align-items: center;
+        margin: 13px 0px;
         color: white;
     }
 
-    .boot{
-        background-color: #0c0e2b;
-        padding: 150px 0px ;
-        height: 100vh;
+    .left-content ul {
+        margin: 30px 0px;
+        padding: 0;
     }
-    .images-content {
-    position: relative;
-}
 
-.images .image2 {
-    position: absolute;
-    left: -42px;
-    bottom: -261px;
-}
+    .left-content ul li i {
+        background-color: #1e0761;
+        margin: 2px 0;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 9px;
+        transition: all .3s;
+    }
 
-.images .image3 {
-    position: absolute;
-    top: 6px;
-    left: 28px;
-}
 
-.images .image4 {
-    position: absolute;
-    bottom: -373px;
-    right: 137px;
-}
 
-.images .image3 {
-    position: absolute;
-    top: 23px;
-    left: 30px;
-}
-.images-content .content {
-    position: absolute;
-    bottom: -355px;
-    left: -54px;
-    background-color: #0c0e2b;
-    display: flex;
-    gap: 20px;
-    padding: 17px;
-    justify-content: center;
-    align-items: center;
-    border-left: 4px solid #5f2ded;
-}
+    .left-content ul li h4 {
+        font-size: 19px;
+        margin: 0px;
+        padding: 0px;
+        color: white;
+    }
 
-.images-content .content h5 {
-    font-size: 40px;
-    color: #5f2ded;
-}
+    .image-content-1 {
+        display: flex;
+        gap: 13px;
+        margin: 45px 33px;
+        align-items: center;
+    }
 
-.images-content .content p {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-}
-.left-content h5 {
-    background-color: #e7deff;
-    width: max-content;
-    padding: 5px 25px;
-    border-radius: 25px;
-    font-size: 17px;
-    color: #5f2ded;
-}
+    .image-content-1 .content h5 {
+        font-size: 40px;
+        color: #e7deff;
+        padding: 0;
+        margin: 0;
+    }
 
-.left-content h2 {
-    margin: 25px 0px;
-    font-size: 52px;
-    font-weight: bolder;
-}
+    .image-content-1 .content p {
+        font-size: 19px;
+        font-weight: 400;
+    }
 
-.left-content p {
-    border-left: 3px solid #5f2ded;
-    padding: 0px 13px;
-    line-height: 1.8;
-}
-.left-content ul li {
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    align-items: center;
-    margin: 13px 0px;
-}
+    .left-content span {
+        position: relative;
+        font-size: 52px;
+        font-weight: bolder;
+        z-index: 1;
+        line-height: 1.3;
+    }
 
-.left-content ul {
-    margin: 39px 0px;
-    padding: 0;
-}
+    .left-content span::before {
+        position: absolute;
+        content: '';
+        top: 43px;
+        right: -152px;
+        height: 7px;
+        width: 148px;
+        background-color: #f2277e;
+        z-index: -1;
+    }
 
-.left-content ul li i {
-    background-color: #0c0e2b;
-    margin: 2px 0;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 9px;
-    transition: all .3s;
-}
-.left-content ul li i:hover{
-    background-color:#1e0761 ;
-}
-.left-content ul li h4 {
-    font-size: 19px;
-    margin: 0px;
-    padding: 0px;
-}
-.image-content-1 {
-    display: flex;
-    gap: 26px;
-    margin: 29px -68px;
-    align-items: center;
-}
 
-.image-content-1 .content h5 {
-    font-size: 40px;
-    color: #e7deff;
-    padding: 0;
-    margin: 0;
-}
+    .accordion-item .accordion-button::after {
+        background-image: unset;
+        position: absolute;
+        content: "kholo";
+        font-family: "Font Awesome 5 Pro";
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 
-.image-content-1 .content p {
-    font-size: 19px;
-    font-weight: 400;
-}
+    .accordion-item .accordion-button:not(.collapsed)::after {
+        content: "khul";
+    }
+
 </style>
 
 <body>
-<section class="boot">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="images-content">
-                   <div class="images">
-                     <div class="image1">
-                        <img src="/bootstrap/image/about_4.png" alt="">
-                     </div>
-                    <div class="image2">
-                        <img src="/bootstrap//image/about_11.png" alt="">
+    <section class="boot">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="images-content">
+                        <div class="images">
+                            <div class="image1">
+                                <img src="/bootstrap/image/about_4.png" alt="">
+                            </div>
+                            <div class="image2">
+                                <img src="/bootstrap//image/about_11.png" alt="">
+                            </div>
+                            <div class="image3">
+                                <img src="/bootstrap/image/about_2.png" alt="">
+                            </div>
+                            <div class="image4">
+                                <img src="/bootstrap/image/about_3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h5>25+</h5>
+                            <p>YEARS EXPERINECE <br> JUST ACHIVED</p>
+
+                        </div>
                     </div>
-                    <div class="image3">
-                        <img src="/bootstrap/image/about_2.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <h5>About US</h5>
+                        <span class="text-white">Welcome to the Online Learning Center</span>
+                        <div class="underline"></div>
+                        <p>25+contray to popular belief,Lorem ipsum dolor sit amet, Velit illo labore, accusamus nam
+                            voluptatum perspiciatis fugiat. </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4> Lorem ipsum dolor sit amet .</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4> Lorem ipsum dolor sit amet sit amet sit amet.</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <h4> Lorem ipsum dolor sit amet .</h4>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="image4">
-                        <img src="/bootstrap/image/about_3.png" alt="">
-                    </div>
-                   </div>
-                   <div class="content">
-                    <h5>25+</h5>
-                    <p>YEARS EXPERINECE <br> JUST  ACHIVED</p>
-                                   
-                   </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="left-content">
-                    <h5>About US</h5>
-                    <h2>Welcome to the Online Learning Center</h2>
-                    <p>25+contray to popular belief,Lorem ipsum dolor sit amet, Velit illo labore, accusamus nam voluptatum perspiciatis fugiat. </p>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i> 
-                        <h4>    Lorem ipsum dolor sit amet .</h4>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i> 
-                        <h4>    Lorem ipsum dolor sit amet .</h4>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i> 
-                        <h4>    Lorem ipsum dolor sit amet .</h4>
-                        </li>
-                    </ul>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="image-content-1">
+                        <div class="image">
+                            <img src="/bootstrap/image/counter__1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>6+</h5>
+                            <p>Total Acheivment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="image-content-1">
+                        <div class="image">
+                            <img src="/bootstrap/image/counter__2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>36+</h5>
+                            <p>Total Acheivment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="image-content-1">
+                        <div class="image">
+                            <img src="/bootstrap/image/counter__3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>3k</h5>
+                            <p>Total Acheivment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="image-content-1">
+                        <div class="image">
+                            <img src="/bootstrap/image/counter__4.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>53+</h5>
+                            <p>Total Acheivment</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="accordion">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Accordion Item #4
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <!-- jab humey kisi ek  optional accordion ko open rakhna hutha hai  tu  2 kam karna hutha hai 1) button mai se collapsed ko  hathana hutha hai  or id mai  show ki class pass karni huti hai   -->
+                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Accordion Item #5
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="image-content-1">
-                    <div class="image">
-                        <img src="/bootstrap/image/counter__1.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h5>6+</h5>
-                        <p>Total Acheivment</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="image-content-1">
-                    <div class="image">
-                        <img src="/bootstrap/image/counter__1.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h5>6+</h5>
-                        <p>Total Acheivment</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="image-content-1">
-                    <div class="image">
-                        <img src="/bootstrap/image/counter__1.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h5>6+</h5>
-                        <p>Total Acheivment</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="image-content-1">
-                    <div class="image">
-                        <img src="/bootstrap/image/counter__1.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h5>6+</h5>
-                        <p>Total Acheivment</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 

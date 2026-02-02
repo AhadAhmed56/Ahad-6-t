@@ -175,8 +175,9 @@
     }
 
     .accordion-item {
-        margin: 10px 0px;
+        margin: 26px 0px;
         background-color: #e7deff;
+        border: none;
     }
 
     section.accordion {
@@ -254,106 +255,171 @@
 
     /* tabs */
     .tabs-sec {
-        padding: 70px 0px;
+        padding: 103px 0px;
         background-color: #eaddcd;
     }
-    section.tabs-sec .content {text-align: center;}
 
-section.tabs-sec .content h4 {
-    font-family: Bungee;
-    color: #4c0a06;
-    font-size: 16px;
-}
+    section.tabs-sec .content {
+        text-align: center;
+    }
 
-section.tabs-sec .content h5 {
-    font-family: 'Bungee';
-    color: #4c0a06;
-    font-size: 46px;
-}
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    background-color: #4c0a06;
-}
-nav#navbar {
-    text-align: center;
-    margin: 0 250px;
-    padding: 21px 0px;
-}
-nav#navbar #nav-tab button {
-    border-radius: 35px;
-    padding: 17px 70px;
-    background-color: white;
-    margin: 0 18px;
-    color: #4c0a06;
-    font-family: Bungee;
-}
-.tabs-card {
-    background-color: #4c0a06;
-    position: relative;
-    margin: 44px 0px;
-    border-radius: 9px;
-    padding: 4px 0px;
-}
+    section.tabs-sec .content h4 {
+        font-family: Bungee;
+        color: #4c0a06;
+        font-size: 13px;
+        padding: 0;
+        margin: 20px 0px;
+    }
 
-.tabs-card .img {
-    text-align: center;
-}
+    section.tabs-sec .content h5 {
+        font-family: 'Bungee';
+        color: #4c0a06;
+        font-size: 50px;
+        margin: 0;
+        line-height: 1.2;
+    }
 
-.tabs-card .img img {
-    width: 100%;
-    display: block;
-}
-.overlap {
+    .tabs-main button.active {
+        background-color: #ffaa34 !important;
+    }
+
+    nav#navbar {
+        padding: 52px 0px 0px 0px;
+        margin: 0px 0px 70px 0px;
+    }
+
+    nav#navbar #nav-tab button {
+        border-radius: 35px;
+        padding: 15px 43px;
+        background-color: white;
+        color: #4c0a06;
+        font-family: Bungee;
+        border: none;
+    }
+
+    nav#navbar #nav-tab button[aria-selected=false] {
+        background: #f1f2f3;
+        color: #4c0a063d;
+    }
+
+    .tabs-card {
+        background-color: #4c0a06;
+        position: relative;
+        /* margin: 63px 0px 0px 0px; */
+        border-radius: 9px;
+        padding: 4px 0px;
+    }
+
+    .tabs-card .img {
+        text-align: center;
+        transition: all .3s;
+    }
+
+    .tabs-card .img img {
+        width: 100%;
+        display: block;
+        transition: all .7s;
+    }
+
+    .overlap {
+        position: absolute;
+        top: -198px;
+        left: -42px;
+    }
+
+    .overlap img {
+        width: 202px;
+        height: 202px;
+        object-fit: contain;
+    }
+
+    .content-tabs {
+        background-color: #eaddcd;
+        margin: 19px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .content-tabs h4 {
+        color: #4c0a06;
+        font-family: bungee;
+    }
+
+    .content-tabs p {
+        color: #4c0a06;
+    }
+
+    .content-tabs ul {
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .content-tabs ul li#price {
+        background-color: #ffaa34;
+        padding: 7px 10px;
+        color: #4c0a06;
+        font-family: bungee;
+        border-radius: 11px;
+        font-size: 20px;
+    }
+
+    .content-tabs ul li  {
+        list-style: none;
+    }
+    .content-tabs ul li a{
+        color: #ffaa34;
+        text-decoration: none;
+         list-style: none;
+        color: #ffaa34;
+        font-family: bungee;
+        font-size: 15px;
+    }
+
+    .overlap-1 {
+        position: absolute;
+        top: -213px;
+        right: 0;
+    }
+
+    .overlap-1 img {
+        width: 183px;
+        height: 218px;
+        object-fit: contain;
+    }
+
+    .tabs-card .img img:hover {
+        scale: 0.7;
+    }
+
+    nav#navbar #nav-tab button:hover {
+        color: #4c0a06;
+        background-color: #ffaa34;
+    }
+
+    .nav-tabs {
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .right-left-img {
+        position: relative;
+    }
+    .overlap1 img {width: 203px;height: 202px;object-fit: contain;}
+
+.overlap1 {
     position: absolute;
-    top: -213px;
-    left: 0;
+    top: -195px;
+    right: -38px;
 }
-
-.overlap img {
-    width: 183px;
-    height: 218px;
-    object-fit: contain;
-    z-index: -1;
+.cust-gap {
+    row-gap: 26px;
 }
-.content-tabs {
-    background-color: #eaddcd;
-    margin: 19px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.content-tabs h4 {
-    color: #4c0a06;
-    font-family: bungee;
-}
-
-.content-tabs p {color: #4c0a06;}
-
-.content-tabs ul {
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-.content-tabs ul  li#price {
-    background-color: #ffaa34;
-    padding: 7px 10px;
-    color: #4c0a06;
-    font-family: bungee;
-    border-radius: 11px;
-    font-size: 20px;
-}
-
-.content-tabs ul li {
-    list-style: none;
-    color: #ffaa34;
-    font-family: bungee;
-    font-size: 15px;
-}
-
-
-
 </style>
 
 <body>
@@ -662,21 +728,29 @@ nav#navbar #nav-tab button {
                                 <!-- is mai ju id hai  wo  pass hugi aria-labelledby="nav-home-tab" pr    -->
                                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                    aria-selected="true">Home</button>
+                                    aria-selected="true">Signature</button>
                                 <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
                                     aria-selected="false">Profile</button>
                                 <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
                                     aria-selected="false">Contact</button>
-                            
+
                             </div>
                         </nav>
+                        <div class="right-left-img ">
+                            <div class="overlap">
+                            <img src="/bootstrap/image/piiza-avater.png" alt="">
+                        </div>
+                        <div class="overlap1">
+                            <img src="/bootstrap/image/piiza-avater1.png" alt="">
+                        </div>
+                        </div>
                         <div class="tab-content" id="nav-tabContent">
                             <!-- is ki id pass  hu gi button mai yaha pr data-bs-target="#nav-home" or  yaha pr aria-controls="nav-home" -->
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                 aria-labelledby="nav-home-tab">
-                                <div class="row">
+                                <div class="row cust-gap">
                                     <div class="col-lg-4">
                                         <div class="tabs-card">
                                             <div class="img">
@@ -688,18 +762,16 @@ nav#navbar #nav-tab button {
                                                     tellus, luctus nec.</p>
                                                 <ul>
                                                     <li id="price">$499</li>
-                                                    <li>Order Now</li>
+                                                    <li><a href="#">Order Now</a></li>
                                                 </ul>
                                             </div>
-                                           <div class="overlap">
-                                             <img src="/bootstrap/image/piiza-avater.png" alt="">
-                                           </div>
+                                        
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="tabs-card">
                                             <div class="img">
-                                                <img src="/bootstrap/image/signature1.png" alt="">
+                                                <img src="/bootstrap/image/signatur4.png" alt="">
                                             </div>
                                             <div class="content-tabs">
                                                 <h4>signature hotdog</h4>
@@ -707,16 +779,16 @@ nav#navbar #nav-tab button {
                                                     tellus, luctus nec.</p>
                                                 <ul>
                                                     <li id="price">$499</li>
-                                                    <li>Order Now</li>
+                                                    <li><a href="#">Order Now</a></li>
                                                 </ul>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
                                         <div class="tabs-card">
                                             <div class="img">
-                                                <img src="/bootstrap/image/signature1.png" alt="">
+                                                <img src="/bootstrap/image/signature2.png" alt="">
                                             </div>
                                             <div class="content-tabs">
                                                 <h4>signature hotdog</h4>
@@ -724,27 +796,281 @@ nav#navbar #nav-tab button {
                                                     tellus, luctus nec.</p>
                                                 <ul>
                                                     <li id="price">$499</li>
-                                                    <li>Order Now</li>
+                                                    <li><a href="#">Order Now</a></li>
                                                 </ul>
                                             </div>
-                                            <div class="overlap-1">
-                                             <img src="/bootstrap/image/piiza-avater1.png" alt="">
-                                           </div>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature3.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature2.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature3.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel"
                                 aria-labelledby="nav-profile-tab">
-                                Profile Content Here
+                                <div class="row cust-gap">
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/snakes.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+                                         
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/snakes.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/snakes.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+                                       
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/snakes.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/snakes.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/snakes.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="nav-contact" role="tabpanel"
                                 aria-labelledby="nav-contact-tab">
-                                Contact Content Here
+                                <div class="row cust-gap">
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature1.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature3.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature2.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+                                   
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature1.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature3.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="tabs-card">
+                                            <div class="img">
+                                                <img src="/bootstrap/image/signature2.png" alt="">
+                                            </div>
+                                            <div class="content-tabs">
+                                                <h4>signature hotdog</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                                                    tellus, luctus nec.</p>
+                                                <ul>
+                                                    <li id="price">$499</li>
+                                                    <li><a href="#">Order Now</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                                About Content Here
-                            </div>
+
                         </div>
                     </div>
                 </div>

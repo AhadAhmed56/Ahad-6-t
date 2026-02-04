@@ -100,6 +100,7 @@
         padding: 0px 13px;
         line-height: 1.8;
         margin: 20px 0px;
+        color: white;
     }
 
     .left-content ul li {
@@ -153,6 +154,7 @@
     .image-content-1 .content p {
         font-size: 19px;
         font-weight: 400;
+        color: white;
     }
 
     .left-content span {
@@ -366,13 +368,14 @@
         font-size: 20px;
     }
 
-    .content-tabs ul li  {
+    .content-tabs ul li {
         list-style: none;
     }
-    .content-tabs ul li a{
+
+    .content-tabs ul li a {
         color: #ffaa34;
         text-decoration: none;
-         list-style: none;
+        list-style: none;
         color: #ffaa34;
         font-family: bungee;
         font-size: 15px;
@@ -407,19 +410,114 @@
         align-items: center;
         gap: 15px;
     }
+
     .right-left-img {
         position: relative;
     }
-    .overlap1 img {width: 203px;height: 202px;object-fit: contain;}
 
-.overlap1 {
-    position: absolute;
-    top: -195px;
-    right: -38px;
-}
-.cust-gap {
-    row-gap: 26px;
-}
+    .overlap1 img {
+        width: 203px;
+        height: 202px;
+        object-fit: contain;
+    }
+
+    .overlap1 {
+        position: absolute;
+        top: -195px;
+        right: -38px;
+    }
+
+    .cust-gap {
+        row-gap: 26px;
+    }
+
+    .order-btn {
+        color: #ffaa34;
+        font-family: bungee;
+
+    }
+
+    .btn:hover {
+        color: #4c0a06;
+        border: none;
+    }
+
+    .tam-image img {
+        width: 462px;
+        height: 430px;
+        object-fit: cover;
+    }
+
+    .tam-image img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+
+    .modal-title {
+        font-size: 24px;
+        font-family: bungee;
+        color: #4c0a06;
+    }
+
+    .btn-close {
+        color: #4c0a06;
+        opacity: 1;
+        padding: 0 14px;
+        font-weight: bolder;
+    }
+
+    ul#pills-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        padding:  15px;
+    }
+
+    ul#pills-tab li.nav-item .nav-link {
+        font-size: 17px;
+        font-family: 'Bungee';
+        background-color: #ffaa34;
+        color: #4c0a06;
+        border-radius: 8px;
+    }
+
+    #pills-tab .nav-link.active {
+        color: #ffaa34 !important;
+        background-color: #4c0a06 !important;
+    }
+
+    .btn-closed {
+        background-color: #ffaa34;
+        padding: 5px 13px;
+        font-family: 'Bungee';
+        color: #4c0a06;
+    }
+
+    button.btn.btn-save {
+        color: #4c0a06;
+        background-color: #ffaa34;
+        font-family: 'Bungee';
+    }
+
+    .btn-closed,
+    .btn-save,
+    .order-btn:focus,
+    .btn-closed,
+    .tn-save,
+    .order-btn:active,
+    .btn-closed,
+    .btn-cave,
+    .order-btn:focus-visible {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .modal-content {
+        background-color: #eaddcd;
+    }
 </style>
 
 <body>
@@ -740,11 +838,11 @@
                         </nav>
                         <div class="right-left-img ">
                             <div class="overlap">
-                            <img src="/bootstrap/image/piiza-avater.png" alt="">
-                        </div>
-                        <div class="overlap1">
-                            <img src="/bootstrap/image/piiza-avater1.png" alt="">
-                        </div>
+                                <img src="/bootstrap/image/piiza-avater.png" alt="">
+                            </div>
+                            <div class="overlap1">
+                                <img src="/bootstrap/image/piiza-avater1.png" alt="">
+                            </div>
                         </div>
                         <div class="tab-content" id="nav-tabContent">
                             <!-- is ki id pass  hu gi button mai yaha pr data-bs-target="#nav-home" or  yaha pr aria-controls="nav-home" -->
@@ -762,10 +860,84 @@
                                                     tellus, luctus nec.</p>
                                                 <ul>
                                                     <li id="price">$499</li>
-                                                    <li><a href="#">Order Now</a></li>
+
+
+                                                    <button type="button" class="btn order-btn " data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                        Order More
+                                                    </button>
+
+                                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                                        Signature Details</h5>
+                                                                    <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <ul class="nav nav-pills mb-3" id="pills-tab"
+                                                                            role="tablist">
+                                                                            <li class="nav-item" role="presentation">
+                                                                                <button class="nav-link active"
+                                                                                    id="pills-home-tab"
+                                                                                    data-bs-toggle="pill"
+                                                                                    data-bs-target="#pills-home"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="pills-home"
+                                                                                    aria-selected="true">Front-Des</button>
+                                                                            </li>
+                                                                            <li class="nav-item" role="presentation">
+                                                                                <button class="nav-link"
+                                                                                    id="pills-profile-tab"
+                                                                                    data-bs-toggle="pill"
+                                                                                    data-bs-target="#pills-profile"
+                                                                                    type="button" role="tab"
+                                                                                    aria-controls="pills-profile"
+                                                                                    aria-selected="false">Back-Des</button>
+                                                                            </li>
+
+
+                                                                        </ul>
+                                                                        <div class="tab-content" id="pills-tabContent">
+                                                                            <div class="tab-pane  fade show active"
+                                                                                id="pills-home" role="tabpanel"
+                                                                                aria-labelledby="pills-home-tab"
+                                                                                tabindex="0">
+                                                                                <div class="tam-image">
+                                                                                    <img src="/bootstrap/image/modal-inner2.jpg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="tab-pane fade"
+                                                                                id="pills-profile" role="tabpanel"
+                                                                                aria-labelledby="pills-profile-tab"
+                                                                                tabindex="0">
+                                                                                <div class="tam-image">
+                                                                                    <img src="/bootstrap/image/modal-inner2.jpg"
+                                                                                        alt="">
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-closed"
+                                                                        data-bs-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-save">Save
+                                                                        changes</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </ul>
                                             </div>
-                                        
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -799,7 +971,7 @@
                                                     <li><a href="#">Order Now</a></li>
                                                 </ul>
                                             </div>
-                                        
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -872,7 +1044,7 @@
                                                     <li><a href="#">Order Now</a></li>
                                                 </ul>
                                             </div>
-                                         
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -906,7 +1078,7 @@
                                                     <li><a href="#">Order Now</a></li>
                                                 </ul>
                                             </div>
-                                       
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -1014,7 +1186,7 @@
                                                     <li><a href="#">Order Now</a></li>
                                                 </ul>
                                             </div>
-                                   
+
                                         </div>
                                     </div>
                                     <div class="col-lg-4">
@@ -1080,10 +1252,13 @@
 
 
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
 
 </body>
 
